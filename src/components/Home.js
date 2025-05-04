@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 // import projects from "../img/projects-icon.png"
 // import contact from "../img/contact-icon.png"
 // import profile from "../img/jimmy1.jpeg"
-import profile from "../img/dafetite.jpeg"
+import profile from "../img/profile_Picture.jpg"
 // import aboutImage from "../img/about-image.png"
 import projectItem1 from "../img/project-item-01.jpg"
 import projectItem2 from "../img/project-item-02.jpg"
@@ -26,8 +26,10 @@ import * as Ficons from "react-icons/fa";
 function Home () {
 	console.log(Ficons)
 	const [showNavMenu, setShowNavMenu] = useState(false);
+	const [isMenuClicked, setIsMenuClicked] = useState(false);
 	const isMobile = useIsMobile();
 	const year = DateHook().todayYear;
+	const toggleMenuClickHandler = () => {setIsMenuClicked(!isMenuClicked)};
 	const navMenuHandler = () => setShowNavMenu(!showNavMenu);
 
 	useEffect(() => {
@@ -72,21 +74,16 @@ function Home () {
 					building Model for predictive purposes.
 					
 					I have good leadership skills, communication skills and always dedicated to tasks.`
-	const profileStyle = {
-		height: '160px',
-		width: '175px',
-		classLeft: 'left-text',
-		classRight: 'right-image',
-		imgBorder: {borderRadius: '50%'},
-		occupationColor: {color: '#00A86B'},
-		aboutColor: {color: '#fff'},
-	}
 	return (
 		<>
 			{/* nav */}
 			<nav className="nav">
-				<div onClick={navMenuHandler}
-				className="burger">
+				<div onClick={() => {
+					navMenuHandler();
+					toggleMenuClickHandler();
+				}}
+				className="burger"
+				style={{background: isMenuClicked ? 'transparent' : null}}>
 					<div className="burger__patty"></div>
 				</div>
 
@@ -153,18 +150,18 @@ function Home () {
 													{isMobile ?
 														<>
 															<div>
-																<div className={profileStyle.classLeft}>
-																	<div className={profileStyle.classRight} style={{...{paddingBottom: '20px'}}}>
-																		<img src={profile} alt="" height={profileStyle.height} width={profileStyle.width} style={profileStyle.imgBorder} />
+																<div className={styles.profileStyle.classLeft}>
+																	<div className={styles.profileStyle.classRight} style={{...{paddingBottom: '20px'}}}>
+																		<img src={profile} alt="" height={styles.profileStyle.height} width={styles.profileStyle.width} style={styles.profileStyle.imgBorder} />
 																	</div>
-																	<h4>{occupation}<em style={profileStyle.occupationColor}>{jobTitle}</em></h4>
+																	<h4>{occupation}<em style={styles.profileStyle.occupationColor}>{jobTitle}</em></h4>
 																	<p>
 																		{about1}
 																	</p>
 																</div>
 															</div>
 															<div>
-																<p style={profileStyle.aboutColor}>
+																<p style={styles.profileStyle.aboutColor}>
 																	{about2}
 																</p>
 															</div>
@@ -172,18 +169,18 @@ function Home () {
 														:
 														<>
 															<div>
-																<div className={profileStyle.classLeft}>
-																	<h4>{occupation}<em style={profileStyle.occupationColor}>{jobTitle}</em></h4>
+																<div className={styles.profileStyle.classLeft}>
+																	<h4>{occupation}<em style={styles.profileStyle.occupationColor}>{jobTitle}</em></h4>
 																	<p>
 																		{about1}
 																	</p>
 																</div>
-																<div className={profileStyle.classRight}>
-																	<img src={profile} alt="" height={profileStyle.height} width={profileStyle.width} style={profileStyle.imgBorder} />
+																<div className={styles.profileStyle.classRight}>
+																	<img src={profile} alt="" height={styles.profileStyle.height} width={styles.profileStyle.width} style={styles.profileStyle.imgBorder} />
 																</div>
 															</div>
 															<div>
-																<p style={profileStyle.aboutColor}>
+																<p style={styles.profileStyle.aboutColor}>
 																	{about2}
 																</p>
 															</div>
@@ -404,9 +401,9 @@ function Home () {
 									<div className="footer"
 									// style={{marginTop: '40px'}}
 									>
-										<p>
+										<p><span style={!isMobile?styles.footer : {}}>
 										Copyright &copy; {year} | Developed by <a href="https://dafetiteogaga.github.io/dafetite/"><img src={dafetite} alt="dafetite" className="dafetite" /></a>
-										</p>
+										</span></p>
 									</div>
 								</div>
 							</div>
@@ -418,4 +415,26 @@ function Home () {
 		</>
 	)
 }
+
+const styles = {
+	profileStyle: {
+		height: '150px',
+		width: '150px',
+		classLeft: 'left-text',
+		classRight: 'right-image',
+		imgBorder: {
+			borderRadius: '50%',
+			padding: '2px',
+			border: '2px solid rgb(255, 255, 255)'
+		},
+		occupationColor: {color: '#00A86B'},
+		aboutColor: {color: '#fff'},
+	},
+	footer: {
+		background: '#0303036e',
+		padding: '8px',
+		borderRadius: '10px',
+	}
+}
+
 export { Home }
