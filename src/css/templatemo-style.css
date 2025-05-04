@@ -41,6 +41,7 @@ ul {
   text-decoration: none;
   text-transform: uppercase;
   border: 1px solid transparent;
+  border-radius: 5px;
 }
 
 .primary-button a:hover {
@@ -126,24 +127,11 @@ ul {
 .nav__link:hover {
   background: #1f2327;
 }
-@media (max-width: 640px) {
-  .nav {
-    width: 70px;
-  }
-  /* .nav__list {
-    height: 90vh;
-  } */
-  .nav__link {
-    height: 40%;
-    width: 70px;
-  }
-}
 
 .burger {
   height: 10vh;
   position: relative;
-  /* display: -webkit-box;
-  display: -ms-flexbox; */
+  border-bottom-right-radius: 10px;
   display: flex;
   padding: 0 20px;
   /* -webkit-box-pack: center;
@@ -202,19 +190,6 @@ ul {
   -webkit-transform: rotate(45deg) translate(-7px, 7px) scaleX(0.7);
           transform: rotate(45deg) translate(-7px, 7px) scaleX(0.7);
 }
-@media (max-width: 640px) {
-  .burger {
-    height: 10vh;
-  }
-  .burger__patty {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-  }
-  .burger--active .burger__patty {
-    -webkit-transform: scale(0.8) rotate(90deg);
-            transform: scale(0.8) rotate(90deg);
-  }
-}
 
 .panel {
   margin: 0;	
@@ -261,7 +236,7 @@ ul {
 
 .b-blue {
   margin-bottom: -2px;
-  background-image: url(../img/dafebg1.jpeg);
+  background-image: url(../img/jimmy_pc_bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -270,7 +245,7 @@ ul {
 }
 
 .b-red {
-  background-image: url(../img/dafebg1.jpeg);
+  background-image: url(../img/jimmy_pc_bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -281,7 +256,7 @@ ul {
 
 .b-green {
   margin-top: -2px;
-  background-image: url(../img/dafebg1.jpeg);
+  background-image: url(../img/jimmy_pc_bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -291,7 +266,7 @@ ul {
 
 .b-yellow {
   margin-top: -1px;
-  background-image: url(../img/dafebg1.jpeg);
+  background-image: url(../img/jimmy_pc_bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -310,14 +285,15 @@ ul {
 .home-content {
 	height: 90vh;
 	/* background-color: rgba(45, 58, 75, 0.5); */
-  background-color: #4547495e;
+  background-color: #0303036e;
 	padding: 40px 60px 0px 60px;
 	position: relative;
 	margin: 10vh auto 0 auto;
+  border-radius: 10px;
 }
 
 .home-content h1 {
-	padding-top: 120px;
+	/* padding-top: 120px; */
 	font-size: 32px;
 	text-transform: uppercase;
 	color: #fff;
@@ -338,6 +314,7 @@ ul {
 	right: -100px;
 	padding: 30px;
 	display: inline-block;
+  border-radius: 10px;
 }
 
 .home-content .left-text {     
@@ -389,7 +366,7 @@ ul {
 .about-content {
   height: 100vh;
   /* background-color: rgba(45, 58, 75, 0.5); */
-  background-color: #4547495e;
+  background-color: #0303036e;
   padding: 0px 60px;
   position: relative;
   margin: 0 auto;
@@ -445,10 +422,11 @@ ul {
 .projects-content {
   height: 100vh;
   /* background-color: rgba(45, 58, 75, 0.5); */
-  background-color: #4547495e;
+  background-color: #0303036e;
   padding: 0px 60px;
   position: relative;
   margin: 0 auto;
+  border-radius: 10px;
 }
 
 .projects-content .heading {
@@ -461,6 +439,7 @@ ul {
 
 .project-item img {
   width: 100%;
+  border-radius: 10px;
 }
 
 .projects-content .owl-carousel {
@@ -476,6 +455,7 @@ ul {
   margin-top: -45px;
   position: relative;
   z-index: 2;
+  border-radius: 10px;
 }
 
 .projects-content .text-content h4 {
@@ -502,10 +482,11 @@ ul {
 .contact-content {
   height: 100vh;
   /* background-color: rgba(45, 58, 75, 0.5); */
-  background-color: #4547495e;
+  background-color: #0303036e;
   padding: 0px 60px;
   position: relative;
   margin: 0 auto;
+  border-radius: 10px;
 }
 
 .contact-content .heading {
@@ -513,7 +494,7 @@ ul {
 }
 
 .contact-content .contat-form {
-  background-color: rgba(250, 250, 250, 0.03);
+  background-color: rgba(0, 0, 0, 0.466);
   padding: 30px 80px 30px 30px;
   margin-right: -50px;
 }
@@ -564,7 +545,7 @@ ul {
   text-decoration: none;
   text-transform: uppercase;
   border: 1px solid transparent;
-  border-radius: 0px;
+  border-radius: 5px;
 }
 
 .contact-content button:hover {
@@ -583,6 +564,7 @@ ul {
   position: absolute;
   margin-left: -30px;
   margin-right: -100px;
+  border-radius: 10px;
 }
 
 .footer {
@@ -631,7 +613,7 @@ ul {
 
 /*
 ========================================
----------- RESPONSIVE STYLE ------------
+---------- RESPONSIVE STYLE (TAB) ------------
 ========================================
 */
 
@@ -762,7 +744,7 @@ ul {
 
 /* Preload images */
 body:after {
-  content: url(../img/close.png) url(../img/loading.gif) url(../img/prev.png) url(../img/next.png);
+  /* content: url(../img/close.png) url(../img/loading.gif) url(../img/prev.png) url(../img/next.png); */
   display: none;
 }
 
@@ -840,7 +822,7 @@ body.lb-disable-scrolling {
   width: 32px;
   height: 32px;
   margin: 0 auto;
-  background: url(../img/loading.gif) no-repeat;
+  /* background: url(../img/loading.gif) no-repeat; */
 }
 
 .lb-nav {
@@ -871,7 +853,7 @@ body.lb-disable-scrolling {
   width: 34%;
   left: 0;
   float: left;
-  background: url(../img/prev.png) left 48% no-repeat;
+  /* background: url(../img/prev.png) left 48% no-repeat; */
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
@@ -889,7 +871,7 @@ body.lb-disable-scrolling {
   width: 64%;
   right: 0;
   float: right;
-  background: url(../img/next.png) right 48% no-repeat;
+  /* background: url(../img/next.png) right 48% no-repeat; */
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
@@ -957,7 +939,7 @@ body.lb-disable-scrolling {
   float: right;
   width: 30px;
   height: 30px;
-  background: url(../img/close.png) top right no-repeat;
+  /* background: url(../img/close.png) top right no-repeat; */
   text-align: right;
   outline: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
@@ -1181,4 +1163,41 @@ body.lb-disable-scrolling {
 
 .owl-carousel .owl-nav {
   display: none;
+}
+
+/*
+========================================
+---------- RESPONSIVE STYLE (MOBILE) ------------
+========================================
+*/
+
+@media (max-width: 640px) {
+  .nav {
+    width: 35px;
+  }
+  .nav__link {
+    height: 40%;
+    width: 35px;
+    padding: 5px;
+  }
+
+  .burger {
+    height: 10vh;
+    padding: 0 0px;
+    border-bottom-right-radius: 0;
+  }
+  .burger__patty {
+    /* -webkit-transform: scale(0.8); */
+    transform: scale(0.8);
+  }
+  .burger--active .burger__patty {
+    /* -webkit-transform: scale(0.8) rotate(90deg); */
+    transform: scale(0.8) rotate(90deg);
+  }
+
+  .socials {
+    /* display: flex;
+    font-size: x-large; */
+    justify-content: center;
+  }
 }
