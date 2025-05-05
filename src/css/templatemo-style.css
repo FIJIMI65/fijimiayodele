@@ -70,14 +70,14 @@ ul {
   z-index: 1;
   top: 0;
   left: 0;
-  /* width: 100px; */
-  /* -webkit-backface-visibility: hidden; */
-          backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
 }
 .nav__list {
   /* margin-left: -40px; */
   display: flex;
   flex-flow: column wrap;
+  padding-top: 70px;
   /* height: 50vh; */
   /* height: 40px; */
   /* gap: 10px; */
@@ -105,7 +105,7 @@ ul {
   /* display: -webkit-box;
   display: -ms-flexbox; */
   display: flex;
-  padding: 30px 20px;
+  padding: 30px 15px;
   /* -webkit-box-pack: center;
       -ms-flex-pack: center; */
   justify-content: center;
@@ -130,20 +130,17 @@ ul {
 
 .burger {
   height: 10vh;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   border-bottom-right-radius: 10px;
   display: flex;
   padding: 0 20px;
-  /* -webkit-box-pack: center;
-      -ms-flex-pack: center; */
-          justify-content: center;
-  /* -webkit-box-align: center;
-      -ms-flex-align: center; */
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   z-index: 2;
   background: #0047AB;
   cursor: pointer;
-  /* -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .burger:hover {
@@ -212,12 +209,12 @@ ul {
 }
 .panel__content {
   will-change: transform;
-  -webkit-transform: scale(0.7) rotateX(-230deg);
-          transform: scale(0.7) rotateX(-230deg);
-  -webkit-transform-origin: center 80%;
-          transform-origin: center 80%;
+  /* -webkit-transform: scale(0.7) rotateX(-230deg); */
+  transform: scale(0.7) rotateX(-230deg);
+  /* -webkit-transform-origin: center 80%; */
+  transform-origin: center 80%;
   opacity: 0;
-  -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  /* -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .panel__content--active {
@@ -595,6 +592,23 @@ ul {
 .dafetite:hover, .dafetite:active {
   width: 110px;
   height: 41px;
+}
+
+.socials_container {
+  position: fixed;
+  top: 18px;
+  /* left: 1000px; */
+  left: 80%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.3s ease;
+}
+
+.socials_container.hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .socials {
@@ -1195,9 +1209,14 @@ body.lb-disable-scrolling {
     transform: scale(0.8) rotate(90deg);
   }
 
+  .socials_container {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   .socials {
-    /* display: flex;
-    font-size: x-large; */
+    /* display: flex;  */
+    font-size: 22px;
     justify-content: center;
   }
 }
