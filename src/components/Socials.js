@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaYoutube, } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaYoutube, FaGithub, } from "react-icons/fa";
 
 function Socials () {
 	// scroll states
@@ -41,6 +41,9 @@ function Socials () {
 				</a>
 				<a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="social">
 					<FaYoutube color="#FF0000" />
+				</a>
+				<a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social">
+					<FaGithub color="#eee" />
 				</a>
 			</div>
 		</div>
