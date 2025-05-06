@@ -1,6 +1,6 @@
 import { useIsMobile } from "../hooks/IsMobile";
 import profile from "../img/profile_Picture.jpg"
-import { Entry } from "./entry";
+import { Entry } from "../entry/entry";
 
 function Home () {
 	const { occupation, jobTitle, skills, about1, about2 } = Entry();
