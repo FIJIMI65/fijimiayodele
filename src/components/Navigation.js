@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaHome, FaProjectDiagram, FaInfoCircle } from "react-icons/fa";
 
+const menuSize = 30
 function Navigation () {
 	const [onHover, setOnHover] = useState(Array.from({length: 3}).fill(false));
 	const [showNavMenu, setShowNavMenu] = useState(false);
@@ -23,7 +24,9 @@ function Navigation () {
 					toggleMenuClickHandler();
 				}}
 				className="burger"
-				style={{background: isMenuClicked ? 'transparent' : null}}
+				style={{
+					background: isMenuClicked ? 'transparent' : null,
+				}}
 				>
 					<div className="burger__patty"></div>
 				</div>
@@ -39,7 +42,7 @@ function Navigation () {
 							<FaHome
 							onMouseEnter={() => hoverHandler(0, true)}
 							onMouseLeave={() => hoverHandler(0, false)}
-							size={50} color={onHover[0]?styles.menuHover.hoverColor:styles.menuHover.idleColor} />
+							size={menuSize} color={onHover[0]?styles.menuHover.hoverColor:styles.menuHover.idleColor} />
 						</a>
 					</li>
 					<li className="nav__item">
@@ -52,7 +55,7 @@ function Navigation () {
 							<FaProjectDiagram
 							onMouseEnter={() => hoverHandler(1, true)}
 							onMouseLeave={() => hoverHandler(1, false)}
-							size={50} color={onHover[1]?styles.menuHover.hoverColor:styles.menuHover.idleColor} />
+							size={menuSize} color={onHover[1]?styles.menuHover.hoverColor:styles.menuHover.idleColor} />
 						</a>
 					</li>
 					<li className="nav__item">
@@ -65,7 +68,7 @@ function Navigation () {
 							<FaInfoCircle
 							onMouseEnter={() => hoverHandler(2, true)}
 							onMouseLeave={() => hoverHandler(2, false)}
-							size={50} color={onHover[2]?styles.menuHover.hoverColor:styles.menuHover.idleColor} />
+							size={menuSize} color={onHover[2]?styles.menuHover.hoverColor:styles.menuHover.idleColor} />
 						</a>
 					</li>
 				</ul>}
