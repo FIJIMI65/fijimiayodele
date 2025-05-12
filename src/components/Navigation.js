@@ -10,12 +10,17 @@ function Navigation () {
 	const toggleMenuClickHandler = () => {setIsMenuClicked(!isMenuClicked)};
 	const hoverHandler = (index, value) => {
 		setOnHover(prev => {
-			console.log('prev:', prev)
+			// console.log('prev:', prev)
 			const updated = [...prev];
 			updated[index] = value;
 			return updated;
 		});
 	};
+	const navIcons = [
+		<FaHome onMouseEnter={()=>hoverHandler(0, true)} onMouseLeave={()=>hoverHandler(0, false)} size={menuSize} color={onHover[0]?styles.menuHover.hoverColor:styles.menuHover.idleColor} />,
+		<FaProjectDiagram onMouseEnter={()=>hoverHandler(1, true)} onMouseLeave={()=>hoverHandler(1, false)} size={menuSize} color={onHover[1]?styles.menuHover.hoverColor:styles.menuHover.idleColor} />,
+		<FaInfoCircle onMouseEnter={()=>hoverHandler(2, true)} onMouseLeave={()=>hoverHandler(2, false)} size={menuSize} color={onHover[2]?styles.menuHover.hoverColor:styles.menuHover.idleColor} />,
+	]
 	return (
 		<nav className="nav">
 			<div>
@@ -32,45 +37,18 @@ function Navigation () {
 				</div>
 
 				{<ul className={`nav__list ${showNavMenu ? "nav__list--active" : ""}`}>
-					<li className="nav__item">
-						<a
-						onClick={() => {
-							navMenuHandler();
-							toggleMenuClickHandler();
-						}}
-						href="#1" className="nav__link">
-							<FaHome
-							onMouseEnter={() => hoverHandler(0, true)}
-							onMouseLeave={() => hoverHandler(0, false)}
-							size={menuSize} color={onHover[0]?styles.menuHover.hoverColor:styles.menuHover.idleColor} />
-						</a>
-					</li>
-					<li className="nav__item">
-						<a
-						onClick={() => {
-							navMenuHandler();
-							toggleMenuClickHandler();
-						}}
-						href="#3" className="nav__link">
-							<FaProjectDiagram
-							onMouseEnter={() => hoverHandler(1, true)}
-							onMouseLeave={() => hoverHandler(1, false)}
-							size={menuSize} color={onHover[1]?styles.menuHover.hoverColor:styles.menuHover.idleColor} />
-						</a>
-					</li>
-					<li className="nav__item">
-						<a
-						onClick={() => {
-							navMenuHandler();
-							toggleMenuClickHandler();
-						}}
-						href="#4" className="nav__link">
-							<FaInfoCircle
-							onMouseEnter={() => hoverHandler(2, true)}
-							onMouseLeave={() => hoverHandler(2, false)}
-							size={menuSize} color={onHover[2]?styles.menuHover.hoverColor:styles.menuHover.idleColor} />
-						</a>
-					</li>
+					{navIcons?.map((icon, index) => (
+						<li key={index} className="nav__item">
+							<a
+							onClick={() => {
+								navMenuHandler();
+								toggleMenuClickHandler();
+							}}
+							href="#1" className="nav__link">
+								{icon}
+							</a>
+						</li>
+					))}
 				</ul>}
 			</div>
 		</nav>

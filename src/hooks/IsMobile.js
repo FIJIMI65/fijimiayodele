@@ -15,14 +15,3 @@ const useIsMobile = () => {
 };
 export { useIsMobile };
 
-// const MyComponent = () => {
-//   const isMobile = useIsMobile();
-
-//   return (
-//     <div>
-//       {isMobile ? <p>📱 Mobile View</p> : <p>🖥️ Desktop View</p>}
-//     </div>
-//   );
-// };
-
-// export default MyComponent;
