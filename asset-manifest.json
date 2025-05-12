@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/fijimiayodele/static/css/main.c2817963.css",
-    "main.js": "/fijimiayodele/static/js/main.1e8bfa9d.js",
+    "main.css": "/fijimiayodele/static/css/main.c235a94a.css",
+    "main.js": "/fijimiayodele/static/js/main.88da8220.js",
     "static/js/488.ac60bfcf.chunk.js": "/fijimiayodele/static/js/488.ac60bfcf.chunk.js",
     "static/media/jimmy_mobile_bg.png": "/fijimiayodele/static/media/jimmy_mobile_bg.2607a54957ef35dad81e.png",
     "static/media/jimmy_pc_bg.png": "/fijimiayodele/static/media/jimmy_pc_bg.be4c985a321e1f17f624.png",
@@ -15,12 +15,12 @@
     "static/media/glyphicons-halflings-regular.eot": "/fijimiayodele/static/media/glyphicons-halflings-regular.2810d2a49be3af435f61.eot",
     "static/media/dafelogoWhiteTransparent.png": "/fijimiayodele/static/media/dafelogoWhiteTransparent.9e22063262c522af2111.png",
     "index.html": "/fijimiayodele/index.html",
-    "main.c2817963.css.map": "/fijimiayodele/static/css/main.c2817963.css.map",
-    "main.1e8bfa9d.js.map": "/fijimiayodele/static/js/main.1e8bfa9d.js.map",
+    "main.c235a94a.css.map": "/fijimiayodele/static/css/main.c235a94a.css.map",
+    "main.88da8220.js.map": "/fijimiayodele/static/js/main.88da8220.js.map",
     "488.ac60bfcf.chunk.js.map": "/fijimiayodele/static/js/488.ac60bfcf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2817963.css",
-    "static/js/main.1e8bfa9d.js"
+    "static/css/main.c235a94a.css",
+    "static/js/main.88da8220.js"
   ]
 }
