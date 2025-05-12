@@ -17,14 +17,24 @@ function Navigation () {
 		});
 	};
 	const navIcons = [
-		<FaHome onMouseEnter={()=>hoverHandler(0, true)} onMouseLeave={()=>hoverHandler(0, false)} size={menuSize} color={onHover[0]?styles.menuHover.hoverColor:styles.menuHover.idleColor} />,
-		<FaProjectDiagram onMouseEnter={()=>hoverHandler(1, true)} onMouseLeave={()=>hoverHandler(1, false)} size={menuSize} color={onHover[1]?styles.menuHover.hoverColor:styles.menuHover.idleColor} />,
-		<FaInfoCircle onMouseEnter={()=>hoverHandler(2, true)} onMouseLeave={()=>hoverHandler(2, false)} size={menuSize} color={onHover[2]?styles.menuHover.hoverColor:styles.menuHover.idleColor} />,
+		{
+			faIcon: <FaHome onMouseEnter={()=>hoverHandler(0, true)} onMouseLeave={()=>hoverHandler(0, false)} size={menuSize} color={onHover[0]?styles.menuHover.hoverColor:styles.menuHover.idleColor} />,
+			link: '#1'
+		},
+		{
+			faIcon: <FaProjectDiagram onMouseEnter={()=>hoverHandler(1, true)} onMouseLeave={()=>hoverHandler(1, false)} size={menuSize} color={onHover[1]?styles.menuHover.hoverColor:styles.menuHover.idleColor} />,
+			link: '#3'
+		},
+		{
+			faIcon: <FaInfoCircle onMouseEnter={()=>hoverHandler(2, true)} onMouseLeave={()=>hoverHandler(2, false)} size={menuSize} color={onHover[2]?styles.menuHover.hoverColor:styles.menuHover.idleColor} />,
+			link: '#4'
+		},
 	]
 	return (
 		<nav className="nav">
 			<div>
-				<div onClick={() => {
+				<div
+				onClick={() => {
 					navMenuHandler();
 					toggleMenuClickHandler();
 				}}
@@ -44,8 +54,8 @@ function Navigation () {
 								navMenuHandler();
 								toggleMenuClickHandler();
 							}}
-							href="#1" className="nav__link">
-								{icon}
+							href={icon.link} className="nav__link">
+								{icon.faIcon}
 							</a>
 						</li>
 					))}
