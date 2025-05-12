@@ -24,27 +24,22 @@ function Socials () {
 	
 		return () => window.removeEventListener('scroll', handleScroll);
 	}, [lastScrollY]);
+	const socialIcons = [
+		{icon: <FaFacebook color="#1877F2" />, link: 'https://facebook.com'},
+		{icon: <FaTwitter color="#1DA1F2" />, link: 'https://twitter.com'},
+		{icon: <FaInstagram color="#E4405F" />, link: 'https://instagram.com'},
+		{icon: <FaLinkedin color="#0077B5" />, link: 'https://linkedin.com'},
+		{icon: <FaYoutube color="#FF0000" />, link: 'https://youtube.com'},
+		{icon: <FaGithub color="#eeeeee" />, link: 'https://github.com'},
+	]
 	return (
 		<div className={`socials_container ${!showSocials ? 'hidden' : ''}`}>
 			<div className="socials">
-				<a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social">
-					<FaFacebook color="#1877F2" />
-				</a>
-				<a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social">
-					<FaTwitter color="#1DA1F2" />
-				</a>
-				<a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social">
-					<FaInstagram color="#E4405F" />
-				</a>
-				<a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social">
-					<FaLinkedin color="#0077B5" />
-				</a>
-				<a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="social">
-					<FaYoutube color="#FF0000" />
-				</a>
-				<a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social">
-					<FaGithub color="#eee" />
-				</a>
+				{socialIcons.map((social, index) => (
+					<a key={index} href={social.link} target="_blank" rel="noopener noreferrer" className="social">
+						{social.icon}
+					</a>
+				))}
 			</div>
 		</div>
 	)
