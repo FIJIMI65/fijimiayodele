@@ -3,7 +3,7 @@ import profile from "../img/profile_Picture.jpg"
 import { Entry } from "../entry/entry";
 
 function Home () {
-	const { occupation, jobTitle, skills, about1, about2 } = Entry();
+	const { name, email,  occupation, company, skills, about1, about2 } = Entry();
 	const isMobile = useIsMobile();
 	return (
 		<>
@@ -16,14 +16,18 @@ function Home () {
 								<div className="col-md-8 col-md-offset-2">
 									<div className="home-content">
 										<div className="home-heading">
-											<h1>
-												<em>Fijimi Ayodele</em><br/>
+											<h1 style={{marginBottom: 0}}>
+												{/* name */}
+												<em>{name}</em><br/>
+												{/* skills */}
 												{(skills.length > 1) ? skills.map((skill, index)=>(
 													<span key={index}>||{skill}<br/></span>
 												))
 												:
 												<span>{skills[0]}</span>}
 											</h1>
+											{/* email */}
+											<h3><span style={{textTransform: 'none', whiteSpace: 'pre'}}>Email: </span> {email}</h3>
 										</div>
 										<div className="row">
 											<div className="col-md-12">
@@ -35,14 +39,17 @@ function Home () {
 																	<div className={styles.profileStyle.classRight} style={{...{paddingBottom: '20px'}}}>
 																		<img src={profile} alt="" height={styles.profileStyle.height} width={styles.profileStyle.width} style={styles.profileStyle.imgBorder} />
 																	</div>
-																	<h4>{occupation}<em style={styles.profileStyle.occupationColor}>{jobTitle}</em></h4>
+																	{/* occupation and company */}
+																	{/* <h4>{occupation}<em style={styles.profileStyle.occupationColor}>{company}</em></h4> */}
 																	<p>
+																		{/* about1 */}
 																		{about1}
 																	</p>
 																</div>
 															</div>
 															<div>
 																<p style={styles.profileStyle.aboutColor}>
+																	{/* about2 */}
 																	{about2}
 																</p>
 															</div>
@@ -51,8 +58,10 @@ function Home () {
 														<>
 															<div>
 																<div className={styles.profileStyle.classLeft}>
-																	<h4>{occupation}<em style={styles.profileStyle.occupationColor}>{jobTitle}</em></h4>
+																	{/* occupation and company */}
+																	{/* <h4>{occupation}<em style={styles.profileStyle.occupationColor}>{company}</em></h4> */}
 																	<p>
+																		{/* about1 */}
 																		{about1}
 																	</p>
 																</div>
@@ -62,6 +71,7 @@ function Home () {
 															</div>
 															<div>
 																<p style={styles.profileStyle.aboutColor}>
+																	{/* about2 */}
 																	{about2}
 																</p>
 															</div>
