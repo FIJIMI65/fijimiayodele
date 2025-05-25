@@ -1,152 +1,13 @@
 import { useRef, useState, useEffect } from "react"
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
-import projectItem1 from "../img/project-item-01.jpg"
-import projectItem2 from "../img/project-item-02.jpg"
-import projectItem3 from "../img/project-item-03.jpg"
 import { useIsMobile } from "../hooks/IsMobile"
+import { Entry } from "../entry/entry"
 
 const arrowSize = 55
 const descriptionLength = 9
-const projectArray = [
-	{
-		thumbnail: projectItem1,
-		alt: "project",
-		title: "Best Design",
-		description: "1Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.",
-		link: "#",
-		buttonText: "More",
-	},
-	{
-		thumbnail: projectItem2,
-		alt: "project",
-		title: "Creative Pen",
-		description: "2Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.",
-		link: "#",
-		buttonText: "More",
-	},
-	{
-		thumbnail: projectItem3,
-		alt: "project",
-		title: "Nice Capture",
-		description: "3Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.",
-		link: "#",
-		buttonText: "More",
-	},
-	{
-		thumbnail: projectItem1,
-		alt: "project",
-		title: "Best Design",
-		description: "4Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.",
-		link: "#",
-		buttonText: "More",
-	},
-	{
-		thumbnail: projectItem2,
-		alt: "project",
-		title: "Creative Pen",
-		description: "5Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.",
-		link: "#",
-		buttonText: "More",
-	},
-	{
-		thumbnail: projectItem3,
-		alt: "project",
-		title: "Nice Capture",
-		description: "6Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.",
-		link: "#",
-		buttonText: "More",
-	},
-	{
-		thumbnail: projectItem1,
-		alt: "project",
-		title: "Best Design",
-		description: "7Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.",
-		link: "#",
-		buttonText: "More",
-	},
-	{
-		thumbnail: projectItem2,
-		alt: "project",
-		title: "Creative Pen",
-		description: "8Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.",
-		link: "#",
-		buttonText: "More",
-	},
-	{
-		thumbnail: projectItem3,
-		alt: "project",
-		title: "Nice Capture",
-		description: "9Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.",
-		link: "#",
-		buttonText: "More",
-	},
-	{
-		thumbnail: projectItem3,
-		alt: "project",
-		title: "Nice Capture",
-		description: "10Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.",
-		link: "#",
-		buttonText: "More",
-	},
-	{
-		thumbnail: projectItem2,
-		alt: "project",
-		title: "Creative Pen",
-		description: "11Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.",
-		link: "#",
-		buttonText: "More",
-	},
-	{
-		thumbnail: projectItem3,
-		alt: "project",
-		title: "Nice Capture",
-		description: "12Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.",
-		link: "#",
-		buttonText: "More",
-	},
-	{
-		thumbnail: projectItem1,
-		alt: "project",
-		title: "Best Design",
-		description: "13Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.",
-		link: "#",
-		buttonText: "More",
-	},
-	{
-		thumbnail: projectItem2,
-		alt: "project",
-		title: "Creative Pen",
-		description: "14Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.",
-		link: "#",
-		buttonText: "More",
-	},
-	{
-		thumbnail: projectItem3,
-		alt: "project",
-		title: "Nice Capture",
-		description: "15Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.",
-		link: "#",
-		buttonText: "More",
-	},
-	{
-		thumbnail: projectItem3,
-		alt: "project",
-		title: "Nice Capture",
-		description: "16Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.",
-		link: "#",
-		buttonText: "More",
-	},
-	{
-		thumbnail: projectItem3,
-		alt: "project",
-		title: "Nice Capture",
-		description: "17Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.",
-		link: "#",
-		buttonText: "More",
-	},
-]
 
 function Projects () {
+	const { projects:projectArray } = Entry();
 	const isMobile = useIsMobile();
 	console.log('isMobile:', isMobile)
 	const containerRef = useRef(null)
@@ -223,7 +84,7 @@ function Projects () {
 															<div key={i} className="projectPage">
 															{group.map((project, index) => (
 																<div key={index} className="project-item">
-																	<a href={project.link} data-lightbox="image-1">
+																	<a href={project.link}>
 																		<img src={project.thumbnail} alt={`${project.alt}-${index + 1}`} />
 																	</a>
 																	<div className="text-content">
