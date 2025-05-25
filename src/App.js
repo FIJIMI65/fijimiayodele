@@ -1,5 +1,5 @@
 import './App.css';
-import './css/templatemo-style.css';
+import './css/styles.css';
 import './css/bootstrap.css';
 import { Index } from './components/Index';
 

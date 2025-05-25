@@ -1,11 +1,21 @@
-
+import projectItem1 from "../img/project-item-01.jpg"
+import projectItem2 from "../img/project-item-02.jpg"
+import projectItem3 from "../img/project-item-03.jpg"
 
 function Entry () {
+	const name = `
+	Fijimi Ayodele
+	` // ###### Do not touch/change this line
+
+	const email = `
+	jimmyayodele@gmail.com
+	` // ###### Do not touch/change this line
+
 	const occupation = `
 	Data Scientist @
 	` // ###### Do not touch/change this line
 
-	const jobTitle = `
+	const company = `
 	Texas Tech
 	` // ###### Do not touch/change this line
 
@@ -37,6 +47,145 @@ function Entry () {
 					I have good leadership skills, communication skills and always dedicated to tasks.
 					` // ###### Do not touch/change this line
 
-	return { occupation, jobTitle, skills, about1, about2 }
+	const projects = [
+		{
+			thumbnail: projectItem1,
+			alt: "project",
+			title: "Best Design",
+			description: "1Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.",
+			link: "#",
+			buttonText: "More",
+		},
+		{
+			thumbnail: projectItem2,
+			alt: "project",
+			title: "Creative Pen",
+			description: "2Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.",
+			link: "#",
+			buttonText: "More",
+		},
+		{
+			thumbnail: projectItem3,
+			alt: "project",
+			title: "Nice Capture",
+			description: "3Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.",
+			link: "#",
+			buttonText: "More",
+		},
+		{
+			thumbnail: projectItem1,
+			alt: "project",
+			title: "Best Design",
+			description: "4Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.",
+			link: "#",
+			buttonText: "More",
+		},
+		{
+			thumbnail: projectItem2,
+			alt: "project",
+			title: "Creative Pen",
+			description: "5Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.",
+			link: "#",
+			buttonText: "More",
+		},
+		{
+			thumbnail: projectItem3,
+			alt: "project",
+			title: "Nice Capture",
+			description: "6Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.",
+			link: "#",
+			buttonText: "More",
+		},
+		{
+			thumbnail: projectItem1,
+			alt: "project",
+			title: "Best Design",
+			description: "7Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.",
+			link: "#",
+			buttonText: "More",
+		},
+		{
+			thumbnail: projectItem2,
+			alt: "project",
+			title: "Creative Pen",
+			description: "8Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.",
+			link: "#",
+			buttonText: "More",
+		},
+		{
+			thumbnail: projectItem3,
+			alt: "project",
+			title: "Nice Capture",
+			description: "9Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.",
+			link: "#",
+			buttonText: "More",
+		},
+		{
+			thumbnail: projectItem3,
+			alt: "project",
+			title: "Nice Capture",
+			description: "10Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.",
+			link: "#",
+			buttonText: "More",
+		},
+		{
+			thumbnail: projectItem2,
+			alt: "project",
+			title: "Creative Pen",
+			description: "11Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.",
+			link: "#",
+			buttonText: "More",
+		},
+		{
+			thumbnail: projectItem3,
+			alt: "project",
+			title: "Nice Capture",
+			description: "12Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.",
+			link: "#",
+			buttonText: "More",
+		},
+		{
+			thumbnail: projectItem1,
+			alt: "project",
+			title: "Best Design",
+			description: "13Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.",
+			link: "#",
+			buttonText: "More",
+		},
+		{
+			thumbnail: projectItem2,
+			alt: "project",
+			title: "Creative Pen",
+			description: "14Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.",
+			link: "#",
+			buttonText: "More",
+		},
+		{
+			thumbnail: projectItem3,
+			alt: "project",
+			title: "Nice Capture",
+			description: "15Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.",
+			link: "#",
+			buttonText: "More",
+		},
+		{
+			thumbnail: projectItem3,
+			alt: "project",
+			title: "Nice Capture",
+			description: "16Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.",
+			link: "#",
+			buttonText: "More",
+		},
+		{
+			thumbnail: projectItem3,
+			alt: "project",
+			title: "Nice Capture",
+			description: "17Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.",
+			link: "#",
+			buttonText: "More",
+		},
+	]
+
+	return { name, email, occupation, company, skills, about1, about2, projects }
 }
 export {Entry}

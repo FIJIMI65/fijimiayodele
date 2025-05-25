@@ -53,7 +53,6 @@ function Contact () {
 												</div>
 											{/* </div> */}
 										</div>
-										
 									</div>
 								</div>
 								<div className="col-md-12">
