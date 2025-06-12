@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/fijimiayodele/static/css/main.ac5533ea.css",
-    "main.js": "/fijimiayodele/static/js/main.1013cab2.js",
+    "main.css": "/fijimiayodele/static/css/main.58ef41b1.css",
+    "main.js": "/fijimiayodele/static/js/main.b7db485f.js",
     "static/js/488.ac60bfcf.chunk.js": "/fijimiayodele/static/js/488.ac60bfcf.chunk.js",
     "static/media/jimmy_mobile_bg.png": "/fijimiayodele/static/media/jimmy_mobile_bg.2607a54957ef35dad81e.png",
     "static/media/jimmy_pc_bg.png": "/fijimiayodele/static/media/jimmy_pc_bg.be4c985a321e1f17f624.png",
     "static/media/profile_Picture.jpg": "/fijimiayodele/static/media/profile_Picture.9c5318036306a83e6fd0.jpg",
     "static/media/glyphicons-halflings-regular.svg": "/fijimiayodele/static/media/glyphicons-halflings-regular.a2d98995549db87fb48d.svg",
     "static/media/glyphicons-halflings-regular.ttf": "/fijimiayodele/static/media/glyphicons-halflings-regular.b7c243015cec15850248.ttf",
+    "static/media/Fijimi_Ayodele.pdf": "/fijimiayodele/static/media/Fijimi_Ayodele.f9582ae390b8217ba70e.pdf",
     "static/media/project-item-01.jpg": "/fijimiayodele/static/media/project-item-01.297206ebc464211b05f9.jpg",
     "static/media/glyphicons-halflings-regular.woff": "/fijimiayodele/static/media/glyphicons-halflings-regular.e3cab037268b4e02bef8.woff",
     "static/media/project-item-03.jpg": "/fijimiayodele/static/media/project-item-03.bae8dc4e19dc814ef70c.jpg",
@@ -15,12 +16,12 @@
     "static/media/glyphicons-halflings-regular.eot": "/fijimiayodele/static/media/glyphicons-halflings-regular.2810d2a49be3af435f61.eot",
     "static/media/dafelogoWhiteTransparent.png": "/fijimiayodele/static/media/dafelogoWhiteTransparent.9e22063262c522af2111.png",
     "index.html": "/fijimiayodele/index.html",
-    "main.ac5533ea.css.map": "/fijimiayodele/static/css/main.ac5533ea.css.map",
-    "main.1013cab2.js.map": "/fijimiayodele/static/js/main.1013cab2.js.map",
+    "main.58ef41b1.css.map": "/fijimiayodele/static/css/main.58ef41b1.css.map",
+    "main.b7db485f.js.map": "/fijimiayodele/static/js/main.b7db485f.js.map",
     "488.ac60bfcf.chunk.js.map": "/fijimiayodele/static/js/488.ac60bfcf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac5533ea.css",
-    "static/js/main.1013cab2.js"
+    "static/css/main.58ef41b1.css",
+    "static/js/main.b7db485f.js"
   ]
 }
