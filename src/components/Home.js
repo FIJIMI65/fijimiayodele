@@ -138,11 +138,7 @@ function Home () {
 														</p>
 													</div>
 													<div className="primary-button">
-														<a href="##none" style={{
-															color: '#fff',
-															textDecoration: 'none',
-															// background: !isAboutSummarized?'#0303036e':undefined
-														}}
+														<a href="##none" style={styles.buttonStyle}
 														onClick={(e) => setIsAboutSummarized(prev=>!prev)}>
 															{isAboutSummarized?'Read More':'Collapse'}
 															</a>
@@ -150,63 +146,35 @@ function Home () {
 
 
 
-													{
-													// isMobile ?
-													// 	<>
-													// 	{/* Mobile specialization */}
-													// 		<div>
-													// 			<div className={styles.profileStyle.classLeft}>
-													// 				<div className={styles.profileStyle.classRight} style={{...{paddingBottom: '20px'}}}>
-													// 					<img src={profile} alt="" height={styles.profileStyle.height} width={styles.profileStyle.width} style={styles.profileStyle.imgBorder} />
-													// 				</div>
-													// 				{/* occupation and company */}
-													// 				{/* <h4>{occupation}<em style={styles.profileStyle.occupationColor}>{company}</em></h4> */}
-													// 				<p>
-													// 					{/* aboutSectioned */}
-													// 					{aboutSectioned}
-													// 				</p>
-													// 			</div>
-													// 		</div>
-													// 		<div>
-													// 			<p style={{...styles.profileStyle.aboutColor, ...styles.profileStyle.pre}}>
-													// 				{/* aboutUnsectionedSummary */}
-													// 				{isAboutSummarized?aboutUnsectionedSummary:aboutUnsectioned}
-													// 			</p>
-													// 		</div>
-													// 	</>
-													// 	:
-														<>
+													{<>
 														{/* PC specialization */}
-															<div>
-																<p style={{...styles.profileStyle.aboutColor, ...styles.profileStyle.pre}}>
-																	{finalSpecializationArray.map((spec, index) => {
-																			return (
-																				<Fragment key={index}>
-																					<br/>
+														<div>
+															<p style={{...styles.profileStyle.aboutColor, ...styles.profileStyle.pre}}>
+																{finalSpecializationArray.map((spec, index) => {
+																		return (
+																			<Fragment key={index}>
+																				<br/>
+																				<div className="specializationTitle">
 																					<FontAwesomeIcon
 																					icon={spec.icon}
 																					color={spec.color}
 																					style={{marginRight: 10, fontSize: '20px'}}
 																					/>
-																					<span style={{fontWeight: 'bold', textDecoration: 'underline'}}>{spec.title}</span>
-																					<br/>
-																					<span>{removeWhiteSpacesAndNewLines(isSpecializationSummarized?cutAndAddEllipsis(spec.description, specializationLimit):spec.description)}</span>
-																					<br/>
-																				</Fragment>
-																			)})
-																	}
-																</p>
-															</div>
-														</>}
-														<div className="primary-button">
-															<a href="##none" style={{
-																color: '#fff',
-																textDecoration: 'none',
-																// background: !isAboutSummarized?'#0303036e':undefined
-															}}
-															onClick={(e) => setIsSpecializationSummarized(prev=>!prev)}>
-																{isSpecializationSummarized?'Read More':'Collapse'}
-															</a>
+																					<span>{spec.title}</span>
+																				</div>
+																				<span>{removeWhiteSpacesAndNewLines(isSpecializationSummarized?cutAndAddEllipsis(spec.description, specializationLimit):spec.description)}</span>
+																				<br/>
+																			</Fragment>
+																		)})
+																}
+															</p>
+														</div>
+													</>}
+													<div className="primary-button">
+														<a href="##none" style={styles.buttonStyle}
+														onClick={(e) => setIsSpecializationSummarized(prev=>!prev)}>
+															{isSpecializationSummarized?'Read More':'Collapse'}
+														</a>
 													</div>
 												</div>
 											</div>
@@ -241,12 +209,6 @@ const styles = {
 		display: 'flex',
 		flexDirection: 'row',
 		justifyContent: 'space-between',
-		// alignItems: 'center',
-		// gap: '10px',
-		// marginTop: '10px',
-		// marginBottom: '10px',
-		// fontSize: '18px',
-		// textAlign: 'center'
 	},
 	email: {
 		textTransform: 'none',
@@ -254,6 +216,10 @@ const styles = {
 	},
 	pcEmail: {
 		alignSelf: '',
+	},
+	buttonStyle: {
+		color: '#fff',
+		textDecoration: 'none',
 	}
 
 }
