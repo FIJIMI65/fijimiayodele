@@ -342,6 +342,12 @@ ul {
 	font-size: 28px;
 }
 
+.specializationTitle span {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 18px;
+}
+
 
 
 /*
@@ -673,6 +679,10 @@ ul {
   }
   .home-content .skills {
     /* background-color: rgba(0, 0, 0, 0.466); */
+  }
+  .specializationTitle {
+    display: flex;
+    align-items: flex-start;
   }
   .projects-content {
     width: 100vh;
