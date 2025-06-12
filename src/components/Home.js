@@ -61,7 +61,6 @@ function Home () {
 	if (cutSpecializationIndex === 0) {
 		cutSpecializationIndex = specializations.length;
 	}
-	// console.log({cutSpecializationIndex})
 	const finalSpecializationArray = isSpecializationSummarized?
 		specializations.slice(0, cutSpecializationIndex)
 		:
