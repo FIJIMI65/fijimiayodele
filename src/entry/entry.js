@@ -1,51 +1,120 @@
+import { faChartLine, faMicrochip, faMagnifyingGlassChart, faCloudUploadAlt } from '@fortawesome/free-solid-svg-icons';
 import projectItem1 from "../img/project-item-01.jpg"
 import projectItem2 from "../img/project-item-02.jpg"
 import projectItem3 from "../img/project-item-03.jpg"
 
 function Entry () {
-	const name = `
-	Fijimi Ayodele
-	` // ###### Do not touch/change this line
+	const newLine = '\\n'
+	const newLineWSpace = '\\n\\n'
+	const fname = 'Fijimi'
+	const lname = 'Ayodele'
+	const name = `${fname}\n${lname}`
 
-	const email = `
-	jimmyayodele@gmail.com
-	` // ###### Do not touch/change this line
+	const email = 'fijimiayodele@gmail.com'
 
-	const occupation = `
-	Data Scientist @
-	` // ###### Do not touch/change this line
+	const occupation = 'Data Scientist @'
 
-	const company = `
-	Texas Tech
-	` // ###### Do not touch/change this line
+	const company = 'Texas Tech'
 
-	const skills = [
-		`
-		DATA SCIENTIST
-		`, `
-		DATA ANALYST
-		`, `
-		MACHINE LEARNING
-		`]
+	const skills = ['DATA SCIENTIST', 'MACHINE LEARNING', 'AI', 'DATA ANALYST']
 
-	const about1 = `
-					As a zealous Data Analyst Data Scientist with a background in Electrical Engineering,
-					I have passion to harness the power of data to drive innovation and solve complex
-					real-world data challenges. With years of experience in leveraging data-driven insights
-					to make informed decisions and effectively communicating these complex concepts to
-					non-technical stakeholders.
-					` // ###### Do not touch/change this line
-	const about2 = `
-					I look forward to collaborate with multidisciplinary co-teams
-					contributing my quota to organizations from data collection and cleaning to preprocessing,
-					visualization and to model evaluation and deployment.
-					
-					I thrive to push the boundaries of artificial intelligence and data science by using different
-					Machine Learning algorithm (Supervised Learning) to find insights from Data and thereby
-					building Model for predictive purposes.
-					
-					I have good leadership skills, communication skills and always dedicated to tasks.
-					` // ###### Do not touch/change this line
+	const tangline = `
+					With cross-industry experience in e-commerce, energy, finance and healthcare domains,
+					delivering end-to-end data solutions from data extraction to model deployment.
+					`
+
+	const specializations = [
+		{
+			title: 'Data Science',
+			icon: faChartLine,
+			color: '#FFD700',
+			description: `
+						My expertise in data science centers on transforming raw data into meaningful
+						insights through rigorous feature engineering, statistical analysis, and data modeling.
+						I have experience creating robust features from both structured and unstructured
+						datasets—handling missing values, performing normalization, encoding categorical
+						variables, and crafting domain-specific indicators to improve model performance.
+						My work is grounded in solid statistical foundations, including hypothesis testing
+						and regression analysis which I apply to validate assumptions and inform analytical
+						strategies. Beyond data preparation, I have developed end-to-end pipelines that
+						integrate exploratory data analysis, dimensionality reduction, and model tuning,
+						enabling data-driven decision-making.
+						`
+		},
+		{
+			title: 'Machine Learning',
+			icon: faMicrochip,
+			color: '#e15759',
+			description: `
+						My machine learning skill set includes building and fine-tuning supervised learning
+						models for predictive tasks such as churn prediction, customer behavior analysis, credit
+						card fraud detection, sales forecasting, and housing price estimation. I've also
+						developed operational models to estimate delivery times and assess credit risk,
+						directly contributing to improved logistics, marketing performance, and financial
+						decision-making.
+						`
+		},
+		{
+			title: 'Deployment & MLOps',
+			icon: faCloudUploadAlt,
+			color: '#00FFFF',
+			description: `
+						On the deployment and operationalization side, I have co-deployed machine learning models
+						using Streamlit integrated it with RESTful APIs, and managed hosting on cloud platforms
+						like AWS and Azure. I regularly collaborate with software engineers and business teams
+						to ensure that the models are scalable, robust, and aligned with organizational
+						objectives, thereby bridging the gap between model development and real-world impact.
+						`
+		},
+		{
+			title: 'Data Analysis',
+			icon: faMagnifyingGlassChart,
+			color: '#2ca02c',
+			description: `
+						In the area of data analysis, I specialize in cleaning and transforming unstructured
+						data, applying techniques such as encoding, normalization, and imputation to ensure data
+						quality and model readiness. I conduct statistical testing, including t-tests, ANOVA,
+						and regression analysis, to uncover relationships and validate business hypotheses. My
+						business intelligence work involves developing interactive dashboards with Power BI,
+						enabling dynamic KPI tracking and real-time reporting by integrating data from multiple
+						sources such as Excel, SQL, and Microsoft Access.
+						`
+		},
+	]
+
+	const aboutSectioned = `
+					I am a results-driven Data Scientist and Machine Learning Engineer with 5+ years of
+					experience leveraging data to drive strategic decisions and business growth. My background
+					spans a range of industries including e-commerce, healthcare, energy, and finanace, where
+					I have built and deployed data-driven solutions that improve performance, reduce risk, and
+					`
+	const aboutUnsectionedSummary = `
+					increase efficiency. My expertise lies in applying machine learning, statistical modeling,
+					and business intelligence tools to solve complex problems and uncover actionable insights.
+					${newLineWSpace}
+					During my time at 10alytics Data & Strategy, I implemented key projects that significantly
+					impacted client outcomes. I developed predictive models for customer churn, marketing
+					optimazation and purchase behavior that improved operational efficiency and boosted customer
+					retention. A classification model I implemented increased marketing campaign conversion rates
+					by 17%, while a risk scoring model for loan approvals reduced credit risk by 10%. I also
+					created a real estate revenue forecasting solution that accurately projected monthly sales
+					with over 94% accuracy, providing valuable insights for investment and planning.
+					`.replace(/\n/g, '')
+					.replace(/\s{2,}/g, '')
+					.replace(/\\n/g, '\n');
+
+	const aboutUnsectioned = `
+					${aboutUnsectionedSummary.replace(/\n/g, '\\n')}
+					${newLineWSpace}
+					My technical toolkit includes Python, SQL, R, Power BI, Scikit-learn, XGBoost, TensorFlow,
+					and cloud platforms such as AWS and AZURE. I've worked extensively on end-to-end data
+					workflows—scraping and cleaning unstructured data, performing exploratory data analysis,
+					engineering features, training models, and deploying them into production environments. I
+					have also utilized NLP and computer vision techniques to automate tasks such as sentiment
+					analysis and medical image classification, cutting manual review time by up to 18%.
+					`.replace(/\n/g, '')
+					.replace(/\s{2,}/g, '')
+					.replace(/\\n/g, '\n');
 
 	const projects = [
 		{
@@ -186,6 +255,18 @@ function Entry () {
 		},
 	]
 
-	return { name, email, occupation, company, skills, about1, about2, projects }
+	return {
+		name,
+		email,
+		occupation,
+		company,
+		skills,
+		tangline,
+		aboutSectioned,
+		aboutUnsectionedSummary,
+		aboutUnsectioned,
+		specializations,
+		projects
+	}
 }
 export {Entry}
