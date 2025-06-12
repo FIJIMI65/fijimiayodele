@@ -1,6 +1,5 @@
 import { Fragment, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faChartLine, faRobot, faChartBar, faCloudUploadAlt } from '@fortawesome/free-solid-svg-icons';
 import { useIsMobile } from "../hooks/IsMobile";
 import profile from "../img/profile_Picture.jpg"
 import { Entry } from "../entry/entry";
