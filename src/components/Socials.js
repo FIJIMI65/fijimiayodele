@@ -63,7 +63,7 @@ function Socials () {
 			link: 'https://github.com/FIJIMI65'
 		},
 	]
-	console.log({resumeOpen})
+	// console.log({resumeOpen})
 	return (
 		<>
 		{resumeOpen&&
