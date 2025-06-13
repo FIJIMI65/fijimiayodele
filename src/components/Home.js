@@ -4,14 +4,36 @@ import { useIsMobile } from "../hooks/IsMobile";
 import profile from "../img/profile_Picture.jpg"
 import { Entry } from "../entry/entry";
 
+const removeWhiteSpacesAndNewLines = (text) => {
+	// console.log(
+	// 	'\ntext:', text,
+	// 	'\ntext.description:', text?.description
+	// );
+	return Array.isArray(text)?text.description.replace(/\n/g, ' ').replace(/\s{2,}/g, ' '):text.replace(/\n/g, ' ').replace(/\s{2,}/g, ' ')
+}
+export const cutAndAddEllipsis = (text = '', maxWords = 20) => {
+	if (Array.isArray(text)) {
+		const firstObject = text[0].description || '';
+		// console.log({firstObject})
+		const words = removeWhiteSpacesAndNewLines(firstObject).split(' ');
+		return words.length > maxWords ?
+			words.slice(0, maxWords).join(' ') + '...'
+			:
+			firstObject;
+	} else {
+		const words = text.trim().split(' ');
+		return words.length > maxWords
+			? words.slice(0, maxWords).join(' ') + '...'
+			: text;
+	}
+};
+
 function Home () {
 	const [isAboutSummarized, setIsAboutSummarized] = useState(true);
 	const [isSpecializationSummarized, setIsSpecializationSummarized] = useState(true);
 	const {
 		name,
 		email,
-		occupation,
-		company,
 		skills,
 		tangline,
 		aboutSectioned,
@@ -23,29 +45,7 @@ function Home () {
 	// const skillStyles = {
 	// 	fontSize: 28,
 	// }
-	const removeWhiteSpacesAndNewLines = (text) => {
-		// console.log(
-		// 	'\ntext:', text,
-		// 	'\ntext.description:', text?.description
-		// );
-		return Array.isArray(text)?text.description.replace(/\n/g, '').replace(/\s{2,}/g, ''):text.replace(/\n/g, '').replace(/\s{2,}/g, '')
-	}
-	const cutAndAddEllipsis = (text = '', maxWords = 20) => {
-		if (Array.isArray(text)) {
-			const firstObject = text[0].description || '';
-			// console.log({firstObject})
-			const words = removeWhiteSpacesAndNewLines(firstObject).split(' ');
-			return words.length > maxWords ?
-				words.slice(0, maxWords).join(' ') + '...'
-				:
-				firstObject;
-		} else {
-			const words = text.trim().split(' ');
-			return words.length > maxWords
-				? words.slice(0, maxWords).join(' ') + '...'
-				: text;
-		}
-	};
+	
 	const specializationLimit = 30
 	let cutSpecializationIndex = 0;
 	// Loop through specializations until a description exceeds the limit
@@ -79,23 +79,24 @@ function Home () {
 											<h1 style={{marginBottom: 0}}>
 												{/* name */}
 												<em style={{whiteSpace: 'pre'}}>{name}</em><br/>
-												<div style={!isMobile?styles.renderEmailAndSkills:undefined}>
-													{/* skills */}
 													<div>
 														{(skills.length > 1) ?
 														skills.map((skill, index)=>(
-															<span key={index} className="skills">||{skill}<br/></span>
+															<Fragment key={index}>
+																<span className="skills">
+																	{(index%2===0&&index!==0)?<br/>:undefined}
+																	{(index%2!==0&&index!==0&&!isMobile)?' || ':(isMobile&&index!==0)?' || ': undefined}{skill}
+																</span>
+															</Fragment>
 														))
 														:
 														<span className="skills">{skills[0]}</span>}
 													</div>
-													{!isMobile&&<h3 style={{alignSelf: "flex-end"}}><span style={styles.email}>Email: </span> {email}</h3>}
-												</div>
 											</h1>
 											{/* tangline */}
 											<h4>{tangline}</h4>
 											{/* email */}
-											{isMobile&&<h3><span style={styles.email}>Email: </span> {email}</h3>}
+											{<h3><span style={styles.email}>Email: </span> {email}</h3>}
 										</div>
 										<div className="row">
 											<div className="col-md-12">
@@ -133,7 +134,7 @@ function Home () {
 													<div>
 														<p style={{...styles.profileStyle.aboutColor, ...styles.profileStyle.pre}}>
 															{/* aboutUnsectionedSummary */}
-															{isAboutSummarized?cutAndAddEllipsis(aboutUnsectionedSummary, isMobile?6:40):aboutUnsectioned}
+															{isAboutSummarized?cutAndAddEllipsis(aboutUnsectionedSummary, isMobile?6:40):aboutUnsectioned.trim()}
 														</p>
 													</div>
 													<div className="primary-button">
@@ -153,15 +154,15 @@ function Home () {
 																		return (
 																			<Fragment key={index}>
 																				<br/>
-																				<div className="specializationTitle">
+																				<span className="specializationTitle">
 																					<FontAwesomeIcon
 																					icon={spec.icon}
 																					color={spec.color}
 																					style={{marginRight: 10, fontSize: '20px'}}
 																					/>
 																					<span>{spec.title}</span>
-																				</div>
-																				<span>{removeWhiteSpacesAndNewLines(isSpecializationSummarized?cutAndAddEllipsis(spec.description, specializationLimit):spec.description)}</span>
+																				</span>{!isMobile&&<br/>}
+																				<span>{removeWhiteSpacesAndNewLines(isSpecializationSummarized?cutAndAddEllipsis(spec.description, specializationLimit):spec.description.trim())}</span>
 																				<br/>
 																			</Fragment>
 																		)})

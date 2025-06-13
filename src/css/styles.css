@@ -236,7 +236,7 @@ ul {
 	height: 90vh;
 	/* background-color: rgba(45, 58, 75, 0.5); */
   background-color: #0303036e;
-	padding: 5px 50px 0px 50px;
+	padding: 5px 40px 0px 40px;
 	position: relative;
 	margin: 10vh auto 0 auto;
   border-radius: 10px;
@@ -256,7 +256,7 @@ ul {
 	color: #ffffffd5;
   /* color: #0047ab; */
 	font-weight: 300;
-  margin: 3px 0 0 0;
+  margin: 0 0 5px 0;
   background: rgba(0, 0, 0, 0.466);
   display: inline-flex;
   justify-content: flex-start;
@@ -275,7 +275,7 @@ ul {
   /* background: rgba(0, 0, 0, 0.466); */
   /* display: inline-flex; */
   /* justify-content: flex-start; */
-  padding: 8px 0;
+  padding: 8px 0 0 0;
   /* border-radius: 7px; */
 }
 
@@ -371,16 +371,20 @@ ul {
 }
 
 .project-item {
-  width: 80%;
+  /* width: 80%; */
+  width: auto;
+  height: max-content;
 }
 
 .project-item img {
   width: 100%;
+  height: 75%;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .projects-content .owl-carousel {
-  margin: 0 -21%;
+  margin: 0 -25%;
   width: 150%;
 }
 
@@ -390,6 +394,7 @@ ul {
   padding: 15px 15px 10px 15px;
   margin-top: -45px;
   position: relative;
+  top: -30px;
   z-index: 2;
   border-radius: 10px;
 }
@@ -647,7 +652,7 @@ ul {
     width: 100vw;
   }
   .home-content .home-box-content {
-    margin: 15px -10px 30px -10px;
+    margin: 5px -10px 30px -10px;
     padding: 10px;
     right: 0;
     /* margin-bottom: 30px;
@@ -678,7 +683,7 @@ ul {
     margin-top: 30px;
   }
   .home-content .skills {
-    /* background-color: rgba(0, 0, 0, 0.466); */
+    font-size: 18px;
   }
   .specializationTitle {
     display: flex;
@@ -736,6 +741,7 @@ ul {
 
   .home-content h3 {
     font-size: 15px;
+    margin: 2px 0 0 0;
   }
 }
 
@@ -1028,13 +1034,16 @@ ul {
 
   .projectPage {
     grid-template-columns: repeat(2, 1fr);
-    gap: 0;
+    gap: 40px 0;
+    padding-bottom: 40px;
   }
   .project-item {
     width: auto;
   }
   .project-item img {
     max-width: 100%;
+    height: 100%;
+    /* background-size: cover; */
   }
   .projects-content .text-content {
     margin: -15% 5px 5px 5px;
@@ -1050,7 +1059,7 @@ ul {
     min-height: auto;
   }
   .projects-content .text-content h4 {
-    font-size: 16px;
+    font-size: 15px;
     padding-top: 5px;
   }
   .project_paragraph {
