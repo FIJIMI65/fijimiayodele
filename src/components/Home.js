@@ -79,8 +79,6 @@ function Home () {
 											<h1 style={{marginBottom: 0}}>
 												{/* name */}
 												<em style={{whiteSpace: 'pre'}}>{name}</em><br/>
-												{/* <div style={!isMobile?styles.renderEmailAndSkills:undefined}> */}
-													{/* skills */}
 													<div>
 														{(skills.length > 1) ?
 														skills.map((skill, index)=>(
