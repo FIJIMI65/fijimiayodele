@@ -1,27 +1,41 @@
 {
   "files": {
-    "main.css": "/fijimiayodele/static/css/main.20600740.css",
-    "main.js": "/fijimiayodele/static/js/main.bc4b6ed6.js",
+    "main.css": "/fijimiayodele/static/css/main.904b80ab.css",
+    "main.js": "/fijimiayodele/static/js/main.236ccc1b.js",
     "static/js/488.ac60bfcf.chunk.js": "/fijimiayodele/static/js/488.ac60bfcf.chunk.js",
     "static/media/jimmy_mobile_bg.png": "/fijimiayodele/static/media/jimmy_mobile_bg.2607a54957ef35dad81e.png",
     "static/media/jimmy_pc_bg.png": "/fijimiayodele/static/media/jimmy_pc_bg.be4c985a321e1f17f624.png",
+    "static/media/sample6.png": "/fijimiayodele/static/media/sample6.2ac84ee7342f97fe17d7.png",
+    "static/media/sample7.png": "/fijimiayodele/static/media/sample7.170a83ea670822bb9de8.png",
+    "static/media/sample11.png": "/fijimiayodele/static/media/sample11.510f41a907856b763a05.png",
+    "static/media/sample1.png": "/fijimiayodele/static/media/sample1.cdb9a9cf3a7d26d7ce17.png",
+    "static/media/sample2.png": "/fijimiayodele/static/media/sample2.875b79542a38aee39108.png",
+    "static/media/sample5y.png": "/fijimiayodele/static/media/sample5y.33e6ed21b09192d0ab98.png",
+    "static/media/sample10.png": "/fijimiayodele/static/media/sample10.c74928de579d7cab911b.png",
     "static/media/profile_Picture.jpg": "/fijimiayodele/static/media/profile_Picture.9c5318036306a83e6fd0.jpg",
+    "static/media/sample4.png": "/fijimiayodele/static/media/sample4.44e364da89e84907e580.png",
+    "static/media/sample2a.png": "/fijimiayodele/static/media/sample2a.1dafe3aff935ec920ada.png",
+    "static/media/sample3.png": "/fijimiayodele/static/media/sample3.b5a70914b2e68ccfed5a.png",
+    "static/media/sample5.png": "/fijimiayodele/static/media/sample5.b5a70914b2e68ccfed5a.png",
     "static/media/glyphicons-halflings-regular.svg": "/fijimiayodele/static/media/glyphicons-halflings-regular.a2d98995549db87fb48d.svg",
+    "static/media/sample9.png": "/fijimiayodele/static/media/sample9.4fa6fd823936230e9af7.png",
+    "static/media/sample8.png": "/fijimiayodele/static/media/sample8.ef8f25361ec952ea50cb.png",
     "static/media/glyphicons-halflings-regular.ttf": "/fijimiayodele/static/media/glyphicons-halflings-regular.b7c243015cec15850248.ttf",
     "static/media/Fijimi_Ayodele.pdf": "/fijimiayodele/static/media/Fijimi_Ayodele.f9582ae390b8217ba70e.pdf",
-    "static/media/project-item-01.jpg": "/fijimiayodele/static/media/project-item-01.297206ebc464211b05f9.jpg",
+    "static/media/sampl.jpg": "/fijimiayodele/static/media/sampl.297206ebc464211b05f9.jpg",
     "static/media/glyphicons-halflings-regular.woff": "/fijimiayodele/static/media/glyphicons-halflings-regular.e3cab037268b4e02bef8.woff",
     "static/media/project-item-03.jpg": "/fijimiayodele/static/media/project-item-03.bae8dc4e19dc814ef70c.jpg",
     "static/media/project-item-02.jpg": "/fijimiayodele/static/media/project-item-02.b9f8b550f0953655bcd9.jpg",
     "static/media/glyphicons-halflings-regular.eot": "/fijimiayodele/static/media/glyphicons-halflings-regular.2810d2a49be3af435f61.eot",
     "static/media/dafelogoWhiteTransparent.png": "/fijimiayodele/static/media/dafelogoWhiteTransparent.9e22063262c522af2111.png",
+    "static/media/sample1b.png": "/fijimiayodele/static/media/sample1b.5c505af249de81ef7f54.png",
     "index.html": "/fijimiayodele/index.html",
-    "main.20600740.css.map": "/fijimiayodele/static/css/main.20600740.css.map",
-    "main.bc4b6ed6.js.map": "/fijimiayodele/static/js/main.bc4b6ed6.js.map",
+    "main.904b80ab.css.map": "/fijimiayodele/static/css/main.904b80ab.css.map",
+    "main.236ccc1b.js.map": "/fijimiayodele/static/js/main.236ccc1b.js.map",
     "488.ac60bfcf.chunk.js.map": "/fijimiayodele/static/js/488.ac60bfcf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.20600740.css",
-    "static/js/main.bc4b6ed6.js"
+    "static/css/main.904b80ab.css",
+    "static/js/main.236ccc1b.js"
   ]
 }
