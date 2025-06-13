@@ -2,6 +2,7 @@ import { useRef, useState, useEffect } from "react"
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 import { useIsMobile } from "../hooks/IsMobile"
 import { Entry } from "../entry/entry"
+// import { cutAndAddEllipsis } from "./Home"
 
 const arrowSize = 55
 const descriptionLength = 9
@@ -9,7 +10,7 @@ const descriptionLength = 9
 function Projects () {
 	const { projects:projectArray } = Entry();
 	const isMobile = useIsMobile();
-	console.log('isMobile:', isMobile)
+	// console.log('isMobile:', isMobile)
 	const containerRef = useRef(null)
 	const [leftHoverColor, setLeftHoverColor] = useState('#8d8989')
 	const [rightHoverColor, setRightHoverColor] = useState('#8d8989')
@@ -53,6 +54,7 @@ function Projects () {
 			setRightHoverColor('#8d8989');
 		}
 	}
+	// console.log('1')
 	return (
 		<>
 			{/* projects section */}
@@ -83,23 +85,26 @@ function Projects () {
 														{chunkedProjects.map((group, i) => (
 															<div key={i} className="projectPage">
 															{group.map((project, index) => (
-																<div key={index} className="project-item">
-																	<a href={project.link}>
-																		<img src={project.thumbnail} alt={`${project.alt}-${index + 1}`} />
-																	</a>
-																	<div className="text-content">
-																		<h4 className="project_h4">{project.title} {index + 1}</h4>
-																		<p className="project_paragraph">
-																			{isMobile
-																			? (project.description.split(' ').length > descriptionLength
-																				? project.description.split(' ').slice(0, descriptionLength).join(' ') + '...'
-																				: project.description)
-																			: project.description}
-																		</p>
-																		<div className="primary-button">
-																			<a href={project.link}>{project.buttonText}</a>
+																<div key={index} className="project-item" style={{ height: isMobile?'200px':'350px' }}>
+																	<a
+																	href={project.link}
+																	style={styles.linkToProject}>
+																		<img
+																		src={project.thumbnail}
+																		alt={`${project.alt}-${index + 1}`}
+																		target="_blank"
+																		rel="noopener noreferrer"/>
+																		<div className="text-content">
+																			<h4 className="project_h4">{project.title} {index + 1}</h4>
+																			<p className="project_paragraph">
+																				{isMobile
+																				? (project.description.split(' ').length > descriptionLength
+																					? project.description.split(' ').slice(0, descriptionLength).join(' ') + '...'
+																					: project.description)
+																				: project.description}
+																			</p>
 																		</div>
-																	</div>
+																	</a>
 																</div>
 															))}
 															</div>
@@ -130,3 +135,10 @@ function Projects () {
 	)
 }
 export {Projects}
+
+const styles = {
+	linkToProject: {
+		textDecoration: 'none',
+		color: 'inherit'
+	},
+}
