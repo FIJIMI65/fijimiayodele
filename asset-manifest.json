@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/fijimiayodele/static/css/main.904b80ab.css",
-    "main.js": "/fijimiayodele/static/js/main.5a6b9852.js",
+    "main.js": "/fijimiayodele/static/js/main.58d534c4.js",
     "static/js/488.ac60bfcf.chunk.js": "/fijimiayodele/static/js/488.ac60bfcf.chunk.js",
     "static/media/jimmy_mobile_bg.png": "/fijimiayodele/static/media/jimmy_mobile_bg.2607a54957ef35dad81e.png",
     "static/media/jimmy_pc_bg.png": "/fijimiayodele/static/media/jimmy_pc_bg.be4c985a321e1f17f624.png",
@@ -31,11 +31,11 @@
     "static/media/sample1b.png": "/fijimiayodele/static/media/sample1b.5c505af249de81ef7f54.png",
     "index.html": "/fijimiayodele/index.html",
     "main.904b80ab.css.map": "/fijimiayodele/static/css/main.904b80ab.css.map",
-    "main.5a6b9852.js.map": "/fijimiayodele/static/js/main.5a6b9852.js.map",
+    "main.58d534c4.js.map": "/fijimiayodele/static/js/main.58d534c4.js.map",
     "488.ac60bfcf.chunk.js.map": "/fijimiayodele/static/js/488.ac60bfcf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.904b80ab.css",
-    "static/js/main.5a6b9852.js"
+    "static/js/main.58d534c4.js"
   ]
 }
