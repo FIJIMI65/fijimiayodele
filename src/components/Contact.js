@@ -52,7 +52,13 @@ function Contact () {
 								<div className="col-md-12">
 									<div className="footer">
 										<p><span style={!isMobile?styles.footer : {}}>
-										Copyright &copy; {year} | Developed by <a href="https://dafetiteogaga.github.io/dafetite/"><img src={dafetite} alt="dafetite" className="dafetite" /></a>
+										Copyright &copy; {year} | Developed by 
+											<a
+											target="_blank"
+											rel="noopener noreferrer"
+											href="https://dafetiteogaga.github.io/dafetite/">
+												<img src={dafetite} alt="dafetite" className="dafetite" />
+											</a>
 										</span></p>
 									</div>
 								</div>
