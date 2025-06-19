@@ -10,7 +10,7 @@ const jimmy = {
 	"jobTitle": "Data Scientist | Data Analyst | Machine Learning | AI",
 	"description": "With cross-industry experience in e-commerce, energy, finance and healthcare domains.",
 	"sameAs": [
-		"https://www.linkedin.com/in/fijimi-ayodele-b77539187/",
+		"https://www.linkedin.com/in/fijimi-ayodele/",
 		"https://github.com/FIJIMI65",
 	],
 }
