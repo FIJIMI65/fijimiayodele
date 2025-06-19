@@ -52,7 +52,7 @@ function Socials () {
 		// },
 		{
 			icon: <FaLinkedin color="#0077B5" />,
-			link: 'https://www.linkedin.com/in/fijimi-ayodele-b77539187/'
+			link: 'https://www.linkedin.com/in/fijimi-ayodele/'
 		},
 		// {
 		// 	icon: <FaYoutube color="#FF0000" />,
