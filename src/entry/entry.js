@@ -4,7 +4,7 @@ const thumbnails = require.context('./projectThumbnails', false, /\.(png|jpe?g|s
 const getThumbnails = (name) => (thumbnails(`./${name}`))
 
 function Entry () {
-	const newLine = '\\n'
+	// const newLine = '\\n'
 	const newLineWSpace = '\\n\\n'
 	const fname = 'Fijimi'
 	const lname = 'Ayodele'
