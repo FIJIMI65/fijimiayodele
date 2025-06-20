@@ -57,7 +57,7 @@ function Contact () {
 											target="_blank"
 											rel="noopener noreferrer"
 											href="https://dafetiteogaga.github.io/dafetite/">
-												<img src={dafetite} alt="dafetite" className="dafetite" />
+												<img src={dafetite} alt="dafetite ogaga" className="dafetite" />
 											</a>
 										</span></p>
 									</div>
