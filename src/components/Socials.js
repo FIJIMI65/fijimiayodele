@@ -42,10 +42,10 @@ function Socials () {
 		// 	icon: <FaFacebook color="#1877F2" />,
 		// 	link: 'https://facebook.com'
 		// },
-		{
-			icon: <FaTwitter color="#1DA1F2" />,
-			link: 'https://twitter.com'
-		},
+		// {
+		// 	icon: <FaTwitter color="#1DA1F2" />,
+		// 	link: 'https://twitter.com'
+		// },
 		// {
 		// 	icon: <FaInstagram color="#E4405F" />,
 		// 	link: 'https://instagram.com'
