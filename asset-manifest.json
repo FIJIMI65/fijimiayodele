@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/fijimiayodele/static/css/main.904b80ab.css",
-    "main.js": "/fijimiayodele/static/js/main.0aae255f.js",
+    "main.css": "/fijimiayodele/static/css/main.c477eda2.css",
+    "main.js": "/fijimiayodele/static/js/main.7ab45806.js",
     "static/js/488.ac60bfcf.chunk.js": "/fijimiayodele/static/js/488.ac60bfcf.chunk.js",
     "static/media/jimmy_mobile_bg.png": "/fijimiayodele/static/media/jimmy_mobile_bg.2607a54957ef35dad81e.png",
     "static/media/jimmy_pc_bg.png": "/fijimiayodele/static/media/jimmy_pc_bg.be4c985a321e1f17f624.png",
@@ -15,6 +15,8 @@
     "static/media/profile_Picture.jpg": "/fijimiayodele/static/media/profile_Picture.9c5318036306a83e6fd0.jpg",
     "static/media/sample4.png": "/fijimiayodele/static/media/sample4.44e364da89e84907e580.png",
     "static/media/sample2a.png": "/fijimiayodele/static/media/sample2a.1dafe3aff935ec920ada.png",
+    "static/media/Marketing Campaign Analysis.png": "/fijimiayodele/static/media/Marketing Campaign Analysis.353ab73652af4c903e87.png",
+    "static/media/Linear Optimization Server Procurement for Intranet Deployment.png": "/fijimiayodele/static/media/Linear Optimization Server Procurement for Intranet Deployment.82e062e7bfd4d7e0b323.png",
     "static/media/sample3.png": "/fijimiayodele/static/media/sample3.b5a70914b2e68ccfed5a.png",
     "static/media/sample5.png": "/fijimiayodele/static/media/sample5.b5a70914b2e68ccfed5a.png",
     "static/media/glyphicons-halflings-regular.svg": "/fijimiayodele/static/media/glyphicons-halflings-regular.a2d98995549db87fb48d.svg",
@@ -30,12 +32,12 @@
     "static/media/dafelogoWhiteTransparent.png": "/fijimiayodele/static/media/dafelogoWhiteTransparent.9e22063262c522af2111.png",
     "static/media/sample1b.png": "/fijimiayodele/static/media/sample1b.5c505af249de81ef7f54.png",
     "index.html": "/fijimiayodele/index.html",
-    "main.904b80ab.css.map": "/fijimiayodele/static/css/main.904b80ab.css.map",
-    "main.0aae255f.js.map": "/fijimiayodele/static/js/main.0aae255f.js.map",
+    "main.c477eda2.css.map": "/fijimiayodele/static/css/main.c477eda2.css.map",
+    "main.7ab45806.js.map": "/fijimiayodele/static/js/main.7ab45806.js.map",
     "488.ac60bfcf.chunk.js.map": "/fijimiayodele/static/js/488.ac60bfcf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.904b80ab.css",
-    "static/js/main.0aae255f.js"
+    "static/css/main.c477eda2.css",
+    "static/js/main.7ab45806.js"
   ]
 }
