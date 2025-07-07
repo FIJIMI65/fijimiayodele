@@ -5,7 +5,8 @@ import { Entry } from "../entry/entry"
 // import { cutAndAddEllipsis } from "./Home"
 
 const arrowSize = 55
-const descriptionLength = 9
+const descriptionLengthMobile = 10
+const descriptionLengthPC = 22
 
 function Projects () {
 	const { projects:projectArray } = Entry();
@@ -95,13 +96,13 @@ function Projects () {
 																		target="_blank"
 																		rel="noopener noreferrer"/>
 																		<div className="text-content">
-																			<h4 className="project_h4">{project.title} {index + 1}</h4>
+																			<h4 className="project_h4">{project.title}</h4>
 																			<p className="project_paragraph">
 																				{isMobile
-																				? (project.description.split(' ').length > descriptionLength
-																					? project.description.split(' ').slice(0, descriptionLength).join(' ') + '...'
+																				? (project.description.split(' ').length > descriptionLengthMobile
+																					? project.description.split(' ').slice(0, descriptionLengthMobile).join(' ') + '...'
 																					: project.description)
-																				: project.description}
+																				: project.description.split(' ').slice(0, descriptionLengthPC).join(' ') + '...'}
 																			</p>
 																		</div>
 																	</a>
