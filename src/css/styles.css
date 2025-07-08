@@ -390,7 +390,7 @@ ul {
 
 .projects-content .text-content {
   margin: 0 15px 15px 15px;
-  background-color: #fff;
+  background-color: #ececece1;
   padding: 15px 15px 10px 15px;
   margin-top: -100px;
   position: relative;
@@ -400,15 +400,16 @@ ul {
 }
 
 .projects-content .text-content h4 {
-  display: inline-block;
+  /* display: inline-block; */
   text-align: center;
-  padding-bottom: 5px;
+  /* padding-bottom: 5px; */
   font-size: 22px;
   /* color: #121212; */
   font-weight: 500;
   text-transform: uppercase;
   margin-top: 0px;
-  border-bottom: 2px solid #eee;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #c4bfbf;
 }
 
 .project_paragraph {
