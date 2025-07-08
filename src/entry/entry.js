@@ -143,7 +143,16 @@ function Entry () {
 			thumbnail: getThumbnails("sample2.png"),
 			alt: "project",
 			title: "Creative Pen",
-			description: `2Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.`,
+			description: `
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+							imperdiet purus. Vestibulum ante ipsum primis in faucibus orci luctus et
+							ultrices posuere cubilia curae; Sed sollicitudin, libero non egestas
+							fermentum, nisi nulla malesuada lacus, vitae commodo sapien velit nec justo.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+							imperdiet purus. Vestibulum ante ipsum primis in faucibus orci luctus et
+							ultrices posuere cubilia curae; Sed sollicitudin, libero non egestas
+							fermentum, nisi nulla malesuada lacus, vitae commodo sapien velit nec justo.
+						`,
 			link: "#",
 			buttonText: "More",
 		},
@@ -151,7 +160,16 @@ function Entry () {
 			thumbnail: getThumbnails("sample3.png"),
 			alt: "project",
 			title: "Nice Capture",
-			description: `3Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.`,
+			description: `
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+							imperdiet purus. Vestibulum ante ipsum primis in faucibus orci luctus et
+							ultrices posuere cubilia curae; Sed sollicitudin, libero non egestas
+							fermentum, nisi nulla malesuada lacus, vitae commodo sapien velit nec justo.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+							imperdiet purus. Vestibulum ante ipsum primis in faucibus orci luctus et
+							ultrices posuere cubilia curae; Sed sollicitudin, libero non egestas
+							fermentum, nisi nulla malesuada lacus, vitae commodo sapien velit nec justo.
+						`,
 			link: "#",
 			buttonText: "More",
 		},
@@ -159,7 +177,16 @@ function Entry () {
 			thumbnail: getThumbnails("sample4.png"),
 			alt: "project",
 			title: "Best Design",
-			description: `4Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.`,
+			description: `
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+							imperdiet purus. Vestibulum ante ipsum primis in faucibus orci luctus et
+							ultrices posuere cubilia curae; Sed sollicitudin, libero non egestas
+							fermentum, nisi nulla malesuada lacus, vitae commodo sapien velit nec justo.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+							imperdiet purus. Vestibulum ante ipsum primis in faucibus orci luctus et
+							ultrices posuere cubilia curae; Sed sollicitudin, libero non egestas
+							fermentum, nisi nulla malesuada lacus, vitae commodo sapien velit nec justo.
+						`,
 			link: "#",
 			buttonText: "More",
 		},
@@ -167,7 +194,16 @@ function Entry () {
 			thumbnail: getThumbnails("sample5.png"),
 			alt: "project",
 			title: "Creative Pen",
-			description: `5Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.`,
+			description: `
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+							imperdiet purus. Vestibulum ante ipsum primis in faucibus orci luctus et
+							ultrices posuere cubilia curae; Sed sollicitudin, libero non egestas
+							fermentum, nisi nulla malesuada lacus, vitae commodo sapien velit nec justo.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+							imperdiet purus. Vestibulum ante ipsum primis in faucibus orci luctus et
+							ultrices posuere cubilia curae; Sed sollicitudin, libero non egestas
+							fermentum, nisi nulla malesuada lacus, vitae commodo sapien velit nec justo.
+						`,
 			link: "#",
 			buttonText: "More",
 		},
@@ -175,7 +211,16 @@ function Entry () {
 			thumbnail: getThumbnails("sample6.png"),
 			alt: "project",
 			title: "Nice Capture",
-			description: `6Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.`,
+			description: `
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+							imperdiet purus. Vestibulum ante ipsum primis in faucibus orci luctus et
+							ultrices posuere cubilia curae; Sed sollicitudin, libero non egestas
+							fermentum, nisi nulla malesuada lacus, vitae commodo sapien velit nec justo.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+							imperdiet purus. Vestibulum ante ipsum primis in faucibus orci luctus et
+							ultrices posuere cubilia curae; Sed sollicitudin, libero non egestas
+							fermentum, nisi nulla malesuada lacus, vitae commodo sapien velit nec justo.
+						`,
 			link: "#",
 			buttonText: "More",
 		},
@@ -183,7 +228,16 @@ function Entry () {
 			thumbnail: getThumbnails("sample7.png"),
 			alt: "project",
 			title: "Best Design",
-			description: `7Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.`,
+			description: `
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+							imperdiet purus. Vestibulum ante ipsum primis in faucibus orci luctus et
+							ultrices posuere cubilia curae; Sed sollicitudin, libero non egestas
+							fermentum, nisi nulla malesuada lacus, vitae commodo sapien velit nec justo.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+							imperdiet purus. Vestibulum ante ipsum primis in faucibus orci luctus et
+							ultrices posuere cubilia curae; Sed sollicitudin, libero non egestas
+							fermentum, nisi nulla malesuada lacus, vitae commodo sapien velit nec justo.
+						`,
 			link: "#",
 			buttonText: "More",
 		},
@@ -191,7 +245,16 @@ function Entry () {
 			thumbnail: getThumbnails("sample8.png"),
 			alt: "project",
 			title: "Creative Pen",
-			description: `8Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.`,
+			description: `
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+							imperdiet purus. Vestibulum ante ipsum primis in faucibus orci luctus et
+							ultrices posuere cubilia curae; Sed sollicitudin, libero non egestas
+							fermentum, nisi nulla malesuada lacus, vitae commodo sapien velit nec justo.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+							imperdiet purus. Vestibulum ante ipsum primis in faucibus orci luctus et
+							ultrices posuere cubilia curae; Sed sollicitudin, libero non egestas
+							fermentum, nisi nulla malesuada lacus, vitae commodo sapien velit nec justo.
+						`,
 			link: "#",
 			buttonText: "More",
 		},
@@ -199,7 +262,16 @@ function Entry () {
 			thumbnail: getThumbnails("sample9.png"),
 			alt: "project",
 			title: "Nice Capture",
-			description: `9Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.`,
+			description: `
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+							imperdiet purus. Vestibulum ante ipsum primis in faucibus orci luctus et
+							ultrices posuere cubilia curae; Sed sollicitudin, libero non egestas
+							fermentum, nisi nulla malesuada lacus, vitae commodo sapien velit nec justo.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+							imperdiet purus. Vestibulum ante ipsum primis in faucibus orci luctus et
+							ultrices posuere cubilia curae; Sed sollicitudin, libero non egestas
+							fermentum, nisi nulla malesuada lacus, vitae commodo sapien velit nec justo.
+						`,
 			link: "#",
 			buttonText: "More",
 		},
@@ -207,7 +279,16 @@ function Entry () {
 			thumbnail: getThumbnails("sample10.png"),
 			alt: "project",
 			title: "Nice Capture",
-			description: `10Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.`,
+			description: `
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+							imperdiet purus. Vestibulum ante ipsum primis in faucibus orci luctus et
+							ultrices posuere cubilia curae; Sed sollicitudin, libero non egestas
+							fermentum, nisi nulla malesuada lacus, vitae commodo sapien velit nec justo.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+							imperdiet purus. Vestibulum ante ipsum primis in faucibus orci luctus et
+							ultrices posuere cubilia curae; Sed sollicitudin, libero non egestas
+							fermentum, nisi nulla malesuada lacus, vitae commodo sapien velit nec justo.
+						`,
 			link: "#",
 			buttonText: "More",
 		},
@@ -215,7 +296,16 @@ function Entry () {
 			thumbnail: getThumbnails("sample11.png"),
 			alt: "project",
 			title: "Creative Pen",
-			description: `11Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.`,
+			description: `
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+							imperdiet purus. Vestibulum ante ipsum primis in faucibus orci luctus et
+							ultrices posuere cubilia curae; Sed sollicitudin, libero non egestas
+							fermentum, nisi nulla malesuada lacus, vitae commodo sapien velit nec justo.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+							imperdiet purus. Vestibulum ante ipsum primis in faucibus orci luctus et
+							ultrices posuere cubilia curae; Sed sollicitudin, libero non egestas
+							fermentum, nisi nulla malesuada lacus, vitae commodo sapien velit nec justo.
+						`,
 			link: "#",
 			buttonText: "More",
 		},
@@ -223,7 +313,16 @@ function Entry () {
 			thumbnail: getThumbnails("sample1.png"),
 			alt: "project",
 			title: "Nice Capture",
-			description: `12Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.`,
+			description: `
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+							imperdiet purus. Vestibulum ante ipsum primis in faucibus orci luctus et
+							ultrices posuere cubilia curae; Sed sollicitudin, libero non egestas
+							fermentum, nisi nulla malesuada lacus, vitae commodo sapien velit nec justo.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+							imperdiet purus. Vestibulum ante ipsum primis in faucibus orci luctus et
+							ultrices posuere cubilia curae; Sed sollicitudin, libero non egestas
+							fermentum, nisi nulla malesuada lacus, vitae commodo sapien velit nec justo.
+						`,
 			link: "#",
 			buttonText: "More",
 		},
@@ -231,7 +330,16 @@ function Entry () {
 			thumbnail: getThumbnails("sample2.png"),
 			alt: "project",
 			title: "Best Design",
-			description: `13Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.`,
+			description: `
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+							imperdiet purus. Vestibulum ante ipsum primis in faucibus orci luctus et
+							ultrices posuere cubilia curae; Sed sollicitudin, libero non egestas
+							fermentum, nisi nulla malesuada lacus, vitae commodo sapien velit nec justo.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+							imperdiet purus. Vestibulum ante ipsum primis in faucibus orci luctus et
+							ultrices posuere cubilia curae; Sed sollicitudin, libero non egestas
+							fermentum, nisi nulla malesuada lacus, vitae commodo sapien velit nec justo.
+						`,
 			link: "#",
 			buttonText: "More",
 		},
@@ -239,7 +347,16 @@ function Entry () {
 			thumbnail: getThumbnails("sample3.png"),
 			alt: "project",
 			title: "Creative Pen",
-			description: `14Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.`,
+			description: `
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+							imperdiet purus. Vestibulum ante ipsum primis in faucibus orci luctus et
+							ultrices posuere cubilia curae; Sed sollicitudin, libero non egestas
+							fermentum, nisi nulla malesuada lacus, vitae commodo sapien velit nec justo.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+							imperdiet purus. Vestibulum ante ipsum primis in faucibus orci luctus et
+							ultrices posuere cubilia curae; Sed sollicitudin, libero non egestas
+							fermentum, nisi nulla malesuada lacus, vitae commodo sapien velit nec justo.
+						`,
 			link: "#",
 			buttonText: "More",
 		},
@@ -247,7 +364,16 @@ function Entry () {
 			thumbnail: getThumbnails("sample4.png"),
 			alt: "project",
 			title: "Nice Capture",
-			description: `15Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.`,
+			description: `
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+							imperdiet purus. Vestibulum ante ipsum primis in faucibus orci luctus et
+							ultrices posuere cubilia curae; Sed sollicitudin, libero non egestas
+							fermentum, nisi nulla malesuada lacus, vitae commodo sapien velit nec justo.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+							imperdiet purus. Vestibulum ante ipsum primis in faucibus orci luctus et
+							ultrices posuere cubilia curae; Sed sollicitudin, libero non egestas
+							fermentum, nisi nulla malesuada lacus, vitae commodo sapien velit nec justo.
+						`,
 			link: "#",
 			buttonText: "More",
 		},
@@ -255,7 +381,16 @@ function Entry () {
 			thumbnail: getThumbnails("sample5.png"),
 			alt: "project",
 			title: "Nice Capture",
-			description: `16Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.`,
+			description: `
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+							imperdiet purus. Vestibulum ante ipsum primis in faucibus orci luctus et
+							ultrices posuere cubilia curae; Sed sollicitudin, libero non egestas
+							fermentum, nisi nulla malesuada lacus, vitae commodo sapien velit nec justo.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+							imperdiet purus. Vestibulum ante ipsum primis in faucibus orci luctus et
+							ultrices posuere cubilia curae; Sed sollicitudin, libero non egestas
+							fermentum, nisi nulla malesuada lacus, vitae commodo sapien velit nec justo.
+						`,
 			link: "#",
 			buttonText: "More",
 		},
@@ -263,7 +398,16 @@ function Entry () {
 			thumbnail: getThumbnails("sample6.png"),
 			alt: "project",
 			title: "Nice Capture",
-			description: `17Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.`,
+			description: `
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+							imperdiet purus. Vestibulum ante ipsum primis in faucibus orci luctus et
+							ultrices posuere cubilia curae; Sed sollicitudin, libero non egestas
+							fermentum, nisi nulla malesuada lacus, vitae commodo sapien velit nec justo.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+							imperdiet purus. Vestibulum ante ipsum primis in faucibus orci luctus et
+							ultrices posuere cubilia curae; Sed sollicitudin, libero non egestas
+							fermentum, nisi nulla malesuada lacus, vitae commodo sapien velit nec justo.
+						`,
 			link: "#",
 			buttonText: "More",
 		},
