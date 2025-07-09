@@ -634,15 +634,22 @@ ul {
   z-index: 1000;
 }
 
+/* toast styling */
+.custom_toast {
+  max-width: 100%;
+  margin: 0 auto;
+  border: 1px solid #858585 !important;
+  border-radius: 8px !important;
+  background-color: rgba(27, 27, 27, 0.678) !important;
+  color: white !important;
+}
+
 
 /*
 ========================================
 ---------- RESPONSIVE STYLE (TAB) ------------
 ========================================
 */
-@media (max-width: 768px){
-
-}
 @media (max-width: 768px){
   .heading h4 {
     font-size: 22px;
@@ -1070,5 +1077,14 @@ ul {
   .project_paragraph {
     font-size: 13px;
     line-height: 18px;
+  }
+
+  /* toast styling */
+  .Toastify__toast-container--top-center {
+    margin-top: 60px !important;
+  }
+  .custom_toast {
+    max-width: 77%;
+    margin: 0 auto;
   }
 }
