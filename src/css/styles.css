@@ -437,7 +437,7 @@ ul {
 }
 
 .contact-content .heading {
-  padding-top: 35%;
+  padding-top: 10%;
 }
 
 .contact-content .contat-form {
@@ -471,7 +471,7 @@ ul {
   max-height: 180px;
   height: 140px;
   display: inline-block;
-  line-height: 40px;
+  line-height: 25px;
   font-size: 13px;
   color: #fff;
   background-color: rgba(250, 250, 250, 0.05);
@@ -950,6 +950,13 @@ ul {
   display: none;
 }
 /* ###################### */
+
+  /* ############################# */
+  .textareaContainer {
+    scrollbar-width: thin;
+    scrollbar-color: #a3a2a2 #0303036e;
+  }
+  /* ############################# */
 
 .projectPage {
   display: grid;
