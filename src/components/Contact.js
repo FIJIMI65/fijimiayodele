@@ -111,7 +111,7 @@ function Contact () {
 															<textarea
 															name="message"
 															rows="6"
-															className="form-control"
+															className="form-control textareaContainer"
 															id="message"
 															placeholder="Message"
 															value={formData.message}
