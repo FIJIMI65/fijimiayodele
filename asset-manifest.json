@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/fijimiayodele/static/css/main.b41311dd.css",
-    "main.js": "/fijimiayodele/static/js/main.da02b5aa.js",
+    "main.css": "/fijimiayodele/static/css/main.40800e3f.css",
+    "main.js": "/fijimiayodele/static/js/main.389d714a.js",
     "static/js/488.ac60bfcf.chunk.js": "/fijimiayodele/static/js/488.ac60bfcf.chunk.js",
     "static/media/jimmy_mobile_bg.png": "/fijimiayodele/static/media/jimmy_mobile_bg.2607a54957ef35dad81e.png",
     "static/media/jimmy_pc_bg.png": "/fijimiayodele/static/media/jimmy_pc_bg.be4c985a321e1f17f624.png",
@@ -32,12 +32,12 @@
     "static/media/dafelogoWhiteTransparent.png": "/fijimiayodele/static/media/dafelogoWhiteTransparent.9e22063262c522af2111.png",
     "static/media/sample1b.png": "/fijimiayodele/static/media/sample1b.5c505af249de81ef7f54.png",
     "index.html": "/fijimiayodele/index.html",
-    "main.b41311dd.css.map": "/fijimiayodele/static/css/main.b41311dd.css.map",
-    "main.da02b5aa.js.map": "/fijimiayodele/static/js/main.da02b5aa.js.map",
+    "main.40800e3f.css.map": "/fijimiayodele/static/css/main.40800e3f.css.map",
+    "main.389d714a.js.map": "/fijimiayodele/static/js/main.389d714a.js.map",
     "488.ac60bfcf.chunk.js.map": "/fijimiayodele/static/js/488.ac60bfcf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b41311dd.css",
-    "static/js/main.da02b5aa.js"
+    "static/css/main.40800e3f.css",
+    "static/js/main.389d714a.js"
   ]
 }
