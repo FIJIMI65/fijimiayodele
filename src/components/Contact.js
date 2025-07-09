@@ -32,6 +32,7 @@ function Contact () {
 	const [isSending, setIsSending] = useState(false);
 	const [formData, setFormData] = useState(formValues);
 	const handleInputChange = (e) => {
+		// toast.success(<div><strong>Success:</strong> Message sent successfully!</div>);
 		const { name, value } = e.target;
 		setFormData({
 			...formData,
@@ -56,10 +57,16 @@ function Contact () {
 					formData,
 					'qQE_DwjBJWwq6sEOg'   // your public key
 				).then(() => {
-					toast.success('Message sent successfully!');
+					toast.success(
+						<div>
+							<strong>Success:</strong> Message sent successfully!
+						</div>);
 					setFormData(formValues);
 				}).catch((error) => {
-					toast.error(`Failed: ${error.text}`);
+					toast.error(
+						<div>
+							<strong>Failed:</strong> {error.text}
+						</div>);
 				});
 
 			}).catch((error) => {
