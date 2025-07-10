@@ -376,7 +376,6 @@ ul {
   height: max-content;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .project-item:hover {
   /* border-radius: 20px; */
   transform: scale(1.05);
@@ -728,9 +727,9 @@ ul {
     padding: 10px 5px;
     /* margin: 50px; */
   }
-  .project-item img {
-    /* max-width: 100%; */
-  }
+  /* .project-item img {
+    max-width: 100%;
+  } */
   .projects-content .heading {
     padding-top: 10%;
   }
