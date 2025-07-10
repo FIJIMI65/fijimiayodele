@@ -9,6 +9,7 @@ const descriptionLengthMobile = 10
 const descriptionLengthPC = 22
 
 function Projects () {
+	const [clickedIndex, setClickedIndex] = useState(null);
 	const { projects:projectArray } = Entry();
 	const isMobile = useIsMobile();
 	// console.log('isMobile:', isMobile)
@@ -55,6 +56,10 @@ function Projects () {
 			setRightHoverColor('#8d8989');
 		}
 	}
+	const handleClick = (index) => {
+		setClickedIndex(index);
+		setTimeout(() => setClickedIndex(null), 300); // Reset animation after 300ms
+	};
 	// console.log('1')
 	return (
 		<>
@@ -86,7 +91,12 @@ function Projects () {
 														{chunkedProjects.map((group, i) => (
 															<div key={i} className="projectPage">
 															{group.map((project, index) => (
-																<div key={index} className="project-item" style={{ height: isMobile?'200px':'350px' }}>
+																<div
+																key={index}
+																className={`project-item ${clickedIndex === index ? "clicked" : ""}`}
+																style={{ height: isMobile ? '200px' : '350px' }}
+																onClick={() => handleClick(index)}
+																>
 																	<a
 																	href={project.link}
 																	style={styles.linkToProject}>
