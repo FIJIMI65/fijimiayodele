@@ -99,6 +99,8 @@ function Projects () {
 																>
 																	<a
 																	href={project.link}
+																	target="_blank"
+																	rel="noopener noreferrer"
 																	style={styles.linkToProject}>
 																		<img
 																		src={project.thumbnail}
