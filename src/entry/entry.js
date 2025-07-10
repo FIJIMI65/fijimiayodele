@@ -129,7 +129,7 @@ function Entry () {
 		{
 			thumbnail: getThumbnails("Linear Optimization Server Procurement for Intranet Deployment.png"),
 			alt: "Linear Optimization: Server Procurement for Intranet Deployment",
-			title: "Server Procurement",
+			title: "Linear Optimization",
 			description: `
 							This project addresses a real-world integer programming problem involving phased
 							server procurement for a company-wide intranet rollout at CommuniCorp. The
@@ -140,20 +140,17 @@ function Entry () {
 			buttonText: "More",
 		},
 		{
-			thumbnail: getThumbnails("sample2.png"),
-			alt: "project",
-			title: "Creative Pen",
+			thumbnail: getThumbnails("Loan Approval Prediction using Machine Learning.png"),
+			alt: "Loan Approval Prediction using Machine Learning",
+			title: "Loan Approval Prediction",
 			description: `
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-							imperdiet purus. Vestibulum ante ipsum primis in faucibus orci luctus et
-							ultrices posuere cubilia curae; Sed sollicitudin, libero non egestas
-							fermentum, nisi nulla malesuada lacus, vitae commodo sapien velit nec justo.
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-							imperdiet purus. Vestibulum ante ipsum primis in faucibus orci luctus et
-							ultrices posuere cubilia curae; Sed sollicitudin, libero non egestas
-							fermentum, nisi nulla malesuada lacus, vitae commodo sapien velit nec justo.
+							This project is a data science initiative to develop a predictive model that
+							determines the likelihood of loan approval based on applicant demographics,
+							financial attributes, and loan-specific features. It aims to assist microfinance
+							institutions in making smarter, data-driven lending decisions, improving approval
+							accuracy, reducing default risk, and promoting financial inclusion.
 						`,
-			link: "#",
+			link: "https://github.com/FIJIMI65/Machine-Learning-Loan-Approval",
 			buttonText: "More",
 		},
 		{
