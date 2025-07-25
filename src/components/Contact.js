@@ -1,10 +1,11 @@
-import { useState } from "react";
-import emailjs from "emailjs-com";
+import { useState, useEffect } from "react";
 import { toast } from 'react-toastify';
 import dafetite from "../img/dafelogoWhiteTransparent.png"
 import { DateHook } from "../hooks/DateHook";
 import { useIsMobile } from "../hooks/IsMobile";
 import { Entry } from "../entry/entry";
+import { fetchBrevoKeyFromBackend } from "../hooks/useFetchApi";
+import { useBrevoEmail } from "../hooks/useBrevoEmail";
 
 const formInputValues = [
 	{
@@ -25,56 +26,87 @@ const formValues = {
 	email: "",
 	message: ""
 }
+
+async function getKey(apiKey, setApiKey) {
+	if (!apiKey) {
+		// console.log('Fetching API key...');
+		try {
+			const endpoint = 'dafetite_brevo_api_key/dafetite_brevo_api'
+			const response = await fetchBrevoKeyFromBackend(endpoint);
+			if (response?.success && response?.key) {
+				setApiKey(response.key);
+			} else {
+				console.error('Failed to fetch API key:', response);
+			}
+		} catch (err) {
+			console.error('Error while fetching API key:', err);
+		}
+	} else {
+		console.warn('Using existing API key');
+	}
+}
+
 function Contact () {
 	const { tangline } = Entry();
+	const { sendContactEmails, success, loading, error, clearInfo } = useBrevoEmail(); // useBrevoEmail hook
+	const [apiKey, setApiKey] = useState(null);
 	const isMobile = useIsMobile();
 	const year = DateHook().todayYear;
-	const [isSending, setIsSending] = useState(false);
 	const [formData, setFormData] = useState(formValues);
+
 	const handleInputChange = (e) => {
-		// toast.success(<div><strong>Success:</strong> Message sent successfully!</div>);
+		getKey(apiKey, setApiKey);
 		const { name, value } = e.target;
 		setFormData({
 			...formData,
 			[name]: value
 		});
 	}
-	const handleSubmit = (e) => {
+
+	// fetch API key on component mount
+	useEffect(() => {
+		if (!apiKey) getKey(apiKey, setApiKey);
+	}, []);
+
+	const handleSubmit = async (e) => {
+		// console.log("handleSubmit called");
 		e.preventDefault();
-		setIsSending(true);
+		// console.warn('success before clearing:', success)
+		clearInfo();
+		// console.warn('success after clearing:', success)
 
-		// First, send the message youself, site owner (you)
-		emailjs.send(
-			'service_2x0u2dm',      // your service ID
-			'template_ddksigd',     // Template A - message to you
-			formData,
-			'qQE_DwjBJWwq6sEOg'     // your public key
-			).then(() => {
-				// Then send acknowledgment to the sender
-				emailjs.send(
-					'service_2x0u2dm',    // same service
-					'template_5w7eds8',   // Template B - thank-you to user
-					formData,
-					'qQE_DwjBJWwq6sEOg'   // your public key
-				).then(() => {
-					toast.success(
-						<div>
-							<strong>Success:</strong> Message sent successfully!
-						</div>);
-					setFormData(formValues);
-				}).catch((error) => {
-					toast.error(
-						<div>
-							<strong>Failed:</strong> {error.text}
-						</div>);
-				});
+		const config = {
+			apiKey: apiKey, // 'brevo-api-key',
+			ownerEmail: 'fijimiayodele@gmail.com', // your email',
+			senderName: 'Fijimi Ayodele', // 'Your Website Name'
+		};
 
-			}).catch((error) => {
-				alert('Failed to send message: ' + error.text);
-			}).finally(() => {
-				setIsSending(false);
-			});
+		const cleanedData = {...formData, subject: 'Message Received! - Email confirmation'};
+		try {
+			// passed formData and config to the hook
+			await sendContactEmails(cleanedData, config);
+			// Success
+			toast.success(
+				<div>
+					{/* use success response */}
+					Success! {success}
+					<br />
+					Kindly check your inbox (or spam folder) for email
+				</div>);
+				setFormData(formValues); // Resets the form data
+			// console.log("Emails sent successfully");
+		} catch (err) {
+			// Error
+			toast.error(
+				<div>
+					{/* use error response */}
+					Error: :::{error} ::::: {err.message}
+				</div>);
+			console.error("Failed to send emails:", error);
+			console.error("Failed to send emails:", err);
+		}
 	};
+
 	return (
 		<>
 			{/* contact section */}
@@ -86,7 +118,7 @@ function Contact () {
 								<div className="col-md-8 col-md-offset-2">
 									<div className="contact-content">
 										<div className="heading">
-											<h4>Contact</h4>
+											<h4>Contact Me</h4>
 										</div>
 										<div className="row">
 											<div className="col-md-8">
@@ -124,8 +156,8 @@ function Contact () {
 															type="submit"
 															id="form-submit"
 															className="btn"
-															disabled={isSending}>
-																{isSending ? "Sending..." : "Send Message"}
+															disabled={loading}>
+																{loading ? "Sending..." : "Send Message"}
 															</button>
 														</fieldset>
 													</form>
