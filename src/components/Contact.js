@@ -42,7 +42,7 @@ async function getKey(apiKey, setApiKey) {
 			console.error('Error while fetching API key:', err);
 		}
 	} else {
-		console.warn('Using existing API key');
+		// console.warn('Using existing API key');
 	}
 }
 
