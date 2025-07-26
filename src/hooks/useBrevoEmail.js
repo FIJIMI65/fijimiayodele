@@ -80,7 +80,7 @@ const emailContentTemplate = ({ formData, type = 'owner' }) => {
 					</p>
 					<p style="color:#555;line-height:1.6;">
 						I typically respond within 24-48 hours.
-						If your inquiry is urgent, please contact me directly via WhatsApp (link below).
+						If your inquiry is urgent, please contact me directly.
 					</p>
 					<br/>
 					<div>
