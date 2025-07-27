@@ -36,6 +36,7 @@ const sendEmail = async (emailData, apiKey) => {
 const emailContentTemplate = ({ formData, type = 'owner' }) => {
 	const { todaySeconds, todayMinutes, todayHours, todayDay, todayDateWithSuffix, todayMonthName, todayYear } = DateHook();
 	const dateTimeStamp = `${todayDay}, ${todayDateWithSuffix} ${todayMonthName} ${todayYear} at exactly ${todayHours}:${todayMinutes}:${todaySeconds}`
+	// console.log('dateTimeStamp:', dateTimeStamp);
 	const h2 = type === 'owner' ? `New Message From - ${toTitleCase(formData.name)}` : 'Thank You for Your Message!';
 	const socialIconStyle = 'width:24px;height:24px;vertical-align:middle;';
 	const socialLinkStyle = 'margin:0 8px;text-decoration:none;display:inline-block;';
@@ -122,7 +123,7 @@ export const useBrevoEmail = () => {
 			const ownerEmailData = {
 				sender: {
 					name: senderName,
-					email: ownerEmail
+					email: 'ogagadafetite@gmail.com' // my API account email
 				},
 				to: [{
 					email: ownerEmail,
@@ -137,7 +138,7 @@ export const useBrevoEmail = () => {
 			const confirmationEmailData = {
 				sender: {
 					name: senderName,
-					email: ownerEmail
+					email: 'ogagadafetite@gmail.com' // my API account email
 				},
 				to: [{
 					email: formData.email,
