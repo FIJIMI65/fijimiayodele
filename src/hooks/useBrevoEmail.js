@@ -61,7 +61,6 @@ const emailContentTemplate = ({ formData, type = 'owner' }) => {
 					<div style="background:#f8f9fa;padding:20px;border-radius:8px;margin:20px 0;">
 						<p><strong>From:</strong> ${toTitleCase(formData.name)}</p>
 						<p><strong>Email:</strong> ${formData.email}</p>
-						<p><strong>Subject:</strong> ${formData.subject}</p>
 						<p><strong>Time:</strong> ${dateTimeStamp}</p>
 					</div>
 					<div style="background:#fff;padding:20px;border-left:4px solid rgba(0,0,0,0.5);margin:20px 0;">
