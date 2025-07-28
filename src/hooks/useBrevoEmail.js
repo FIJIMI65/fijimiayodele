@@ -129,6 +129,10 @@ export const useBrevoEmail = () => {
 					email: ownerEmail,
 					name: senderName
 				}],
+				replyTo: {
+					email: formData.email,
+					name: toTitleCase(formData.name)
+				},
 				subject: `New Message from ${toTitleCase(formData.name)}`,
 				htmlContent: emailContentTemplate({formData, type: 'owner'})
 			};
@@ -144,6 +148,10 @@ export const useBrevoEmail = () => {
 					email: formData.email,
 					name: toTitleCase(formData.name)
 				}],
+				replyTo: {
+					email: ownerEmail,
+					name: senderName
+				},
 				subject: formData.subject,
 				htmlContent: emailContentTemplate({formData, type: 'visitor'})
 			};
