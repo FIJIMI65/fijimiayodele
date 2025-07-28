@@ -27,7 +27,7 @@ const formValues = {
 	message: ""
 }
 
-async function getKey(apiKey, setApiKey) {
+async function getKey(apiKey, setApiKey, setApiEmail) {
 	if (!apiKey) {
 		// console.log('Fetching API key...');
 		try {
@@ -35,6 +35,7 @@ async function getKey(apiKey, setApiKey) {
 			const response = await fetchBrevoKeyFromBackend(endpoint);
 			if (response?.success && response?.key) {
 				setApiKey(response.key);
+				setApiEmail(response.email);
 			} else {
 				console.error('Failed to fetch API key:', response);
 			}
@@ -50,12 +51,13 @@ function Contact () {
 	const { tangline } = Entry();
 	const { sendContactEmails, success, loading, error, clearInfo } = useBrevoEmail(); // useBrevoEmail hook
 	const [apiKey, setApiKey] = useState(null);
+	const [apiEmail, setApiEmail] = useState(null);
 	const isMobile = useIsMobile();
 	const year = DateHook().todayYear;
 	const [formData, setFormData] = useState(formValues);
 
 	const handleInputChange = (e) => {
-		getKey(apiKey, setApiKey);
+		getKey(apiKey, setApiKey, setApiEmail);
 		const { name, value } = e.target;
 		setFormData({
 			...formData,
@@ -65,7 +67,7 @@ function Contact () {
 
 	// fetch API key on component mount
 	useEffect(() => {
-		if (!apiKey) getKey(apiKey, setApiKey);
+		if (!apiKey) getKey(apiKey, setApiKey, setApiEmail);
 	}, []);
 
 	const handleSubmit = async (e) => {
@@ -77,6 +79,7 @@ function Contact () {
 
 		const config = {
 			apiKey: apiKey, // 'brevo-api-key',
+			apiEmail: apiEmail, // brevo email address
 			ownerEmail: 'fijimiayodele@gmail.com', // your email',
 			senderName: 'Fijimi Ayodele', // 'Your Website Name'
 		};
