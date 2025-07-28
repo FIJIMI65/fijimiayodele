@@ -106,7 +106,7 @@ export const useBrevoEmail = () => {
 	const [error, setError] = useState(null);
 
 	const sendContactEmails = async (formData, config) => {
-		const { apiKey, ownerEmail, senderName } = config;
+		const { apiKey, apiEmail, ownerEmail, senderName } = config;
 		// console.log('config:', config)
 
 		if (!apiKey || !ownerEmail) {
@@ -123,7 +123,7 @@ export const useBrevoEmail = () => {
 			const ownerEmailData = {
 				sender: {
 					name: senderName,
-					email: 'ogagadafetite@gmail.com' // my API account email
+					email: apiEmail
 				},
 				to: [{
 					email: ownerEmail,
@@ -138,7 +138,7 @@ export const useBrevoEmail = () => {
 			const confirmationEmailData = {
 				sender: {
 					name: senderName,
-					email: 'ogagadafetite@gmail.com' // my API account email
+					email: apiEmail
 				},
 				to: [{
 					email: formData.email,
